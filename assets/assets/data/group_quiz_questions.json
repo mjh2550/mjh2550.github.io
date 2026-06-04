@@ -1,0 +1,5102 @@
+[
+  {
+    "id": "dotnet001",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "C#에서 await가 아직 끝나지 않은 Task를 만났을 때 올바른 설명은?",
+    "options": [
+      "현재 스레드를 완료될 때까지 블로킹한다",
+      "async 메서드의 실행을 일시 중단하고 제어를 호출자에게 돌려준다",
+      "항상 새 OS 스레드를 생성한다",
+      "Task를 동기 메서드로 변환한다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: await operator",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/await"
+  },
+  {
+    "id": "dotnet002",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "I/O Bound 작업을 C# async/await로 처리할 때 기대하는 가장 중요한 효과는?",
+    "options": [
+      "UI/요청 처리 스레드를 기다림 동안 점유하지 않는다",
+      "CPU 연산 시간이 반드시 줄어든다",
+      "GC가 비활성화된다",
+      "모든 예외가 자동으로 무시된다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: async scenarios",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/async-scenarios"
+  },
+  {
+    "id": "dotnet003",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "C# value type과 reference type의 저장 의미 차이로 맞는 것은?",
+    "options": [
+      "value type 변수는 데이터를 직접 담고 reference type 변수는 객체 참조를 담는다",
+      "둘 다 항상 힙 주소만 담는다",
+      "reference type은 복사할 수 없다",
+      "value type은 null만 저장한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "C# language specification: Types",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/types"
+  },
+  {
+    "id": "dotnet004",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "다음 중 C#의 값 타입으로 분류되는 것은?",
+    "options": [
+      "class Order",
+      "interface IDisposable",
+      "struct Point",
+      "string"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: C# structs",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/structs"
+  },
+  {
+    "id": "dotnet005",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "sealed class의 핵심 효과는?",
+    "options": [
+      "인스턴스 생성을 금지한다",
+      "다른 클래스가 그 클래스를 상속하지 못하게 한다",
+      "필드를 모두 readonly로 만든다",
+      "인터페이스 구현을 자동 생성한다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: sealed modifier",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/sealed"
+  },
+  {
+    "id": "dotnet006",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "override 메서드에 sealed를 붙이는 주된 목적은?",
+    "options": [
+      "해당 override를 하위 클래스에서 다시 override하지 못하게 한다",
+      "메서드를 static으로 만든다",
+      "메서드 호출을 비동기로 만든다",
+      "메서드 접근 제한자를 public으로 바꾼다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: sealed modifier",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/sealed"
+  },
+  {
+    "id": "dotnet007",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "Task.Run의 일반적인 역할로 가장 적절한 것은?",
+    "options": [
+      "지정한 작업을 ThreadPool에서 실행하도록 큐에 넣는다",
+      "현재 Task를 즉시 취소한다",
+      "UI 스레드에서만 작업을 실행한다",
+      "컴파일 타임에 async 메서드를 만든다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: Task.Run",
+    "sourceUrl": "https://learn.microsoft.com/dotnet/api/system.threading.tasks.task.run"
+  },
+  {
+    "id": "dotnet008",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": ".NET GC가 컬렉션 중 회수 대상으로 판단하는 객체는?",
+    "options": [
+      "관리 힙에 있고 애플리케이션에서 더 이상 사용되지 않는 객체",
+      "모든 static 객체",
+      "스택의 모든 지역 변수",
+      "현재 실행 중인 모든 Task"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: Garbage collection",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/"
+  },
+  {
+    "id": "dotnet009",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "reference type 변수 두 개가 같은 객체를 가리킬 때 발생할 수 있는 일은?",
+    "options": [
+      "한 변수를 통해 바꾼 객체 상태가 다른 변수에서도 보인다",
+      "두 변수는 항상 독립 복사본을 가진다",
+      "컴파일 오류가 난다",
+      "값 타입으로 자동 변환된다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "C# language specification: Types",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/types"
+  },
+  {
+    "id": "dotnet010",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "struct를 다른 변수에 대입할 때 일반적인 의미는?",
+    "options": [
+      "데이터가 복사되어 별도 인스턴스처럼 다뤄진다",
+      "항상 같은 힙 객체를 공유한다",
+      "대입이 금지된다",
+      "GC 루트가 반드시 생성된다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: C# structs",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/structs"
+  },
+  {
+    "id": "dotnet011",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "async 메서드에서 await 대상 Task가 예외를 발생시키면 await 표현식은 보통 어떻게 동작하는가?",
+    "options": [
+      "예외를 다시 throw한다",
+      "false를 반환한다",
+      "프로세스를 무조건 종료한다",
+      "예외를 문자열로 변환한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: await operator",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/await"
+  },
+  {
+    "id": "dotnet012",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "C#에서 string에 대한 설명으로 가장 정확한 것은?",
+    "options": [
+      "reference type이지만 문자열 리터럴/불변성 등 특성이 있다",
+      "항상 value type이다",
+      "struct의 별칭이다",
+      "GC 대상이 될 수 없다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "C# language specification: Types",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/types"
+  },
+  {
+    "id": "dotnet013",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "async 메서드에서 await가 완료되지 않은 작업을 만나면?",
+    "options": [
+      "메서드 실행을 일시 중단하고 호출자에게 제어를 돌려준다",
+      "현재 스레드를 반드시 블로킹한다",
+      "항상 새 프로세스를 만든다",
+      "GC를 즉시 실행한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: await operator",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/await"
+  },
+  {
+    "id": "dotnet014",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "await할 수 있는 대표 .NET 타입이 아닌 것은?",
+    "options": [
+      "Task",
+      "Task<T>",
+      "ValueTask<T>",
+      "Random"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: await operator",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/await"
+  },
+  {
+    "id": "dotnet015",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "async void가 일반적으로 권장되지 않는 이유는?",
+    "options": [
+      "반드시 UI 스레드에서만 실행된다",
+      "메모리를 전혀 쓰지 않는다",
+      "호출자가 완료와 예외를 추적하기 어렵다",
+      "항상 컴파일되지 않는다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: Asynchronous programming",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/"
+  },
+  {
+    "id": "dotnet016",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "Task와 Thread의 관계 설명으로 맞는 것은?",
+    "options": [
+      "Task는 GC 대상이 아니다",
+      "Task는 비동기 작업의 추상화이고 반드시 전용 Thread와 1:1은 아니다",
+      "Task 하나는 항상 OS Thread 하나다",
+      "Thread는 await할 수 없다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: Task Parallel Library",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/task-parallel-library-tpl"
+  },
+  {
+    "id": "dotnet017",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "CPU-bound 작업을 UI 앱에서 처리할 때 Task.Run을 쓰는 주된 이유는?",
+    "options": [
+      "ThreadPool에서 작업해 UI 스레드 점유를 줄이기 위해",
+      "네트워크 응답을 캐시하기 위해",
+      "컴파일 시간을 줄이기 위해",
+      "nullable 경고를 끄기 위해"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: Task Parallel Library",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/task-parallel-library-tpl"
+  },
+  {
+    "id": "dotnet018",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "CancellationToken의 주된 목적은?",
+    "options": [
+      "스레드를 강제 종료한다",
+      "객체를 직렬화한다",
+      "LINQ 쿼리를 정렬한다",
+      "작업 취소 요청을 협력적으로 전달한다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: Task Parallel Library",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/task-parallel-library-tpl"
+  },
+  {
+    "id": "dotnet019",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "IAsyncDisposable은 어떤 상황과 관련 있는가?",
+    "options": [
+      "상속 금지",
+      "문자열 interning",
+      "비동기 정리가 필요한 리소스 해제",
+      "값 타입 복사"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 3,
+    "sourceTitle": "Microsoft Learn: Dispose pattern",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/dispose-pattern"
+  },
+  {
+    "id": "dotnet020",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "using 문/선언의 주된 역할은?",
+    "options": [
+      "LINQ를 활성화한다",
+      "IDisposable 리소스 해제를 보장한다",
+      "항상 비동기 실행한다",
+      "객체를 sealed로 만든다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: Dispose pattern",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/dispose-pattern"
+  },
+  {
+    "id": "dotnet021",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "nullable reference types의 목적은?",
+    "options": [
+      "null 가능성에 대한 컴파일 타임 경고를 제공한다",
+      "모든 null을 런타임에서 금지한다",
+      "참조 타입을 값 타입으로 바꾼다",
+      "GC를 끈다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: Nullable reference types",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/nullable-references"
+  },
+  {
+    "id": "dotnet022",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "string?의 의미로 맞는 것은?",
+    "options": [
+      "빈 문자열만 허용",
+      "값 타입 문자열",
+      "컴파일 오류",
+      "null일 수 있는 문자열 참조"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: Nullable reference types",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/nullable-references"
+  },
+  {
+    "id": "dotnet023",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "record 타입의 대표 특징은?",
+    "options": [
+      "상속을 금지한다",
+      "스레드를 만든다",
+      "데이터 중심 타입에 값 기반 동등성 지원",
+      "항상 mutable 필드만 가진다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: C# records",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/records"
+  },
+  {
+    "id": "dotnet024",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "with 식은 record에서 주로 무엇에 쓰이나?",
+    "options": [
+      "스택에 고정",
+      "일부 값을 바꾼 복사본 생성",
+      "객체를 삭제",
+      "메서드를 override"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: C# records",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/records"
+  },
+  {
+    "id": "dotnet025",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "generic 타입을 쓰는 주된 이유는?",
+    "options": [
+      "타입 안정성을 유지하며 재사용 가능한 코드를 작성한다",
+      "모든 타입 검사를 제거한다",
+      "항상 boxing을 강제한다",
+      "런타임에만 이름을 결정한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: Generics in .NET",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/standard/generics/"
+  },
+  {
+    "id": "dotnet026",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "List<T>에서 T의 의미는?",
+    "options": [
+      "스레드 개수",
+      "시간 제한",
+      "파일 경로",
+      "요소 타입 매개변수"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: Generics in .NET",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/standard/generics/"
+  },
+  {
+    "id": "dotnet027",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "LINQ의 Select는 주로 무엇을 수행하나?",
+    "options": [
+      "예외를 삼킨다",
+      "객체를 dispose한다",
+      "각 요소를 다른 형태로 투영한다",
+      "컬렉션을 잠근다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: LINQ in C#",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/linq/"
+  },
+  {
+    "id": "dotnet028",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "LINQ의 Where는 주로 무엇을 수행하나?",
+    "options": [
+      "참조를 null로 만든다",
+      "조건에 맞는 요소를 필터링한다",
+      "모든 요소를 정렬한다",
+      "새 스레드를 만든다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: LINQ in C#",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/linq/"
+  },
+  {
+    "id": "dotnet029",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "IEnumerable<T>의 deferred execution과 가까운 설명은?",
+    "options": [
+      "열거될 때 실제 쿼리 실행이 지연될 수 있다",
+      "선언 즉시 항상 DB에 저장된다",
+      "모든 결과가 컴파일 타임에 확정된다",
+      "항상 병렬 실행된다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 3,
+    "sourceTitle": "Microsoft Learn: LINQ in C#",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/linq/"
+  },
+  {
+    "id": "dotnet030",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "exception filter의 장점으로 맞는 것은?",
+    "options": [
+      "예외 발생을 모두 금지한다",
+      "finally를 제거한다",
+      "GC를 중지한다",
+      "catch 조건을 지정해 특정 예외만 처리할 수 있다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 3,
+    "sourceTitle": "Microsoft Learn: Exceptions and exception handling",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/"
+  },
+  {
+    "id": "dotnet031",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "finally 블록의 역할은?",
+    "options": [
+      "메서드를 async로 만든다",
+      "LINQ 결과를 캐시한다",
+      "예외 여부와 관계없이 정리 코드를 실행한다",
+      "예외를 생성한다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: Exceptions and exception handling",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/"
+  },
+  {
+    "id": "dotnet032",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "throw; 와 throw ex; 중 원래 스택 추적 보존에 더 적절한 것은?",
+    "options": [
+      "await ex;",
+      "throw;",
+      "throw ex;",
+      "return ex;"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: Exceptions and exception handling",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/"
+  },
+  {
+    "id": "dotnet033",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "interface의 주된 목적은?",
+    "options": [
+      "구현해야 할 계약을 정의한다",
+      "객체 생성을 강제한다",
+      "값 타입만 만든다",
+      "메서드를 private로 만든다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: Interfaces",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/interfaces"
+  },
+  {
+    "id": "dotnet034",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "C#에서 클래스가 여러 인터페이스를 구현할 수 있는가?",
+    "options": [
+      "불가능하다",
+      "struct만 가능하다",
+      "sealed 클래스만 가능하다",
+      "가능하다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: Interfaces",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/interfaces"
+  },
+  {
+    "id": "dotnet035",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "abstract class와 interface의 차이로 적절한 것은?",
+    "options": [
+      "abstract class는 상속될 수 없다",
+      "interface는 타입으로 쓸 수 없다",
+      "abstract class는 공통 구현과 상태를 담을 수 있다",
+      "interface는 구현할 수 없다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: Interfaces",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/interfaces"
+  },
+  {
+    "id": "dotnet036",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "delegate는 무엇을 표현하는가?",
+    "options": [
+      "파일 핸들",
+      "메서드 참조를 담는 타입",
+      "값 타입 전용 상자",
+      "GC 세대"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: Delegates",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/delegates-overview"
+  },
+  {
+    "id": "dotnet037",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "event의 목적과 가까운 것은?",
+    "options": [
+      "구독자에게 발생 사실을 알리는 패턴 지원",
+      "객체 메모리 해제",
+      "상속 금지",
+      "문자열 정렬"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: Delegates",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/delegates-overview"
+  },
+  {
+    "id": "dotnet038",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "pattern matching의 장점은?",
+    "options": [
+      "항상 런타임 리플렉션만 쓴다",
+      "제네릭을 금지한다",
+      "스레드를 고정한다",
+      "타입/값/구조 조건을 간결하게 검사한다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: Pattern matching",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/functional/pattern-matching"
+  },
+  {
+    "id": "dotnet039",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "switch expression의 특징으로 맞는 것은?",
+    "options": [
+      "if문보다 항상 빠름",
+      "예외를 자동 처리",
+      "값을 반환하는 식 형태의 switch를 제공한다",
+      "반드시 void만 반환"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: Pattern matching",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/functional/pattern-matching"
+  },
+  {
+    "id": "dotnet040",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "struct의 기본 특성으로 맞는 것은?",
+    "options": [
+      "null만 저장한다",
+      "값 타입이다",
+      "항상 참조 타입이다",
+      "상속의 기준 클래스가 된다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: Structure types",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct"
+  },
+  {
+    "id": "dotnet041",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "readonly struct를 쓰는 이유로 적절한 것은?",
+    "options": [
+      "구조체 인스턴스 상태 변경을 제한한다",
+      "모든 필드를 static으로 만든다",
+      "힙 할당을 강제한다",
+      "상속을 허용한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: Structure types",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/struct"
+  },
+  {
+    "id": "dotnet042",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "boxing은 무엇인가?",
+    "options": [
+      "참조 타입을 값 타입으로 복사한다",
+      "GC를 끄는 작업",
+      "비동기 작업 취소",
+      "값 타입을 object 같은 참조 타입으로 포장한다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: C# type system",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/"
+  },
+  {
+    "id": "dotnet043",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "unboxing은 무엇인가?",
+    "options": [
+      "Task를 Thread로 바꾼다",
+      "객체를 serialize한다",
+      "boxed 값 타입을 다시 값 타입으로 꺼낸다",
+      "문자열을 intern한다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: C# type system",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/"
+  },
+  {
+    "id": "dotnet044",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "GC 세대 개념의 목적은?",
+    "options": [
+      "컴파일러 버전을 선택한다",
+      "객체 생존 기간 특성을 이용해 수집 효율을 높인다",
+      "모든 객체를 매번 수집한다",
+      "스택 변수를 수집한다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 3,
+    "sourceTitle": "Microsoft Learn: Garbage collection",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/"
+  },
+  {
+    "id": "dotnet045",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "managed heap에 주로 저장되는 것은?",
+    "options": [
+      "관리되는 참조 타입 객체",
+      "CPU 레지스터만",
+      "소스 코드 주석",
+      "네임스페이스 이름만"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: Garbage collection",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/"
+  },
+  {
+    "id": "dotnet046",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "nameof 연산자의 장점은?",
+    "options": [
+      "객체를 복사한다",
+      "스레드를 시작한다",
+      "예외를 숨긴다",
+      "식별자 이름을 문자열로 안전하게 얻는다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: C# type system",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/"
+  },
+  {
+    "id": "dotnet047",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "var 키워드의 의미는?",
+    "options": [
+      "필드를 public으로 만든다",
+      "nullable을 강제한다",
+      "컴파일러가 지역 변수 타입을 추론한다",
+      "동적 타입으로만 만든다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "Microsoft Learn: C# type system",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/"
+  },
+  {
+    "id": "dotnet048",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "dynamic과 object의 차이로 맞는 것은?",
+    "options": [
+      "둘은 완전히 동일한 컴파일 규칙",
+      "dynamic은 많은 바인딩을 런타임으로 미룬다",
+      "object는 타입이 아니다",
+      "dynamic은 값 타입만 가능"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 3,
+    "sourceTitle": "Microsoft Learn: C# type system",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/"
+  },
+  {
+    "id": "dotnet049",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "extension method의 목적은?",
+    "options": [
+      "기존 타입에 인스턴스 메서드처럼 호출 가능한 메서드를 추가한다",
+      "타입의 메모리 레이아웃을 바꾼다",
+      "상속을 금지한다",
+      "GC 루트를 제거한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: C# type system",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/"
+  },
+  {
+    "id": "dotnet050",
+    "type": "multipleChoice",
+    "category": ".NET/C#",
+    "question": "partial class의 사용처로 적절한 것은?",
+    "options": [
+      "런타임에 클래스를 쪼갠다",
+      "인터페이스 구현을 금지한다",
+      "메서드를 비동기로 강제한다",
+      "한 타입 정의를 여러 파일로 나누어 작성한다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "Microsoft Learn: C# type system",
+    "sourceUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/"
+  },
+  {
+    "id": "flutter001",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Flutter Widget에 대한 설명으로 맞는 것은?",
+    "options": [
+      "UI 일부에 대한 immutable declaration이다",
+      "플랫폼 네이티브 View를 반드시 직접 감싼다",
+      "항상 mutable 상태를 내부 필드에 저장한다",
+      "렌더링 이후에는 Element가 된다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Architectural overview",
+    "sourceUrl": "https://docs.flutter.dev/resources/architectural-overview"
+  },
+  {
+    "id": "flutter002",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Flutter가 Android/iOS에서 일관된 UI를 제공하는 핵심 구조는?",
+    "options": [
+      "시스템 UI 위젯 라이브러리를 우회하고 자체 위젯 세트와 렌더링 파이프라인을 사용한다",
+      "HTML을 WebView로 렌더링한다",
+      "Android XML 레이아웃만 재사용한다",
+      "iOS UIKit 컴포넌트만 사용한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Flutter docs: Architectural overview",
+    "sourceUrl": "https://docs.flutter.dev/resources/architectural-overview"
+  },
+  {
+    "id": "flutter003",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "setState() 호출의 가장 직접적인 의미는?",
+    "options": [
+      "관련 State를 dirty로 표시해 다음 build에서 UI를 갱신하게 한다",
+      "앱 프로세스를 재시작한다",
+      "State 객체를 즉시 dispose한다",
+      "모든 라우트를 pop한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Inside Flutter",
+    "sourceUrl": "https://docs.flutter.dev/resources/inside-flutter"
+  },
+  {
+    "id": "flutter004",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "FutureBuilder가 가장 잘 맞는 상황은?",
+    "options": [
+      "단발성 Future 결과에 따라 UI를 만든다",
+      "매 프레임 애니메이션 값을 계산한다",
+      "무한 스트림 이벤트를 직접 렌더링한다",
+      "라우팅 테이블을 생성한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Flutter API: FutureBuilder",
+    "sourceUrl": "https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html"
+  },
+  {
+    "id": "flutter005",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "FutureBuilder에 넘기는 Future를 build 메서드 안에서 매번 새로 만들면 생길 수 있는 문제는?",
+    "options": [
+      "부모 rebuild마다 비동기 작업이 다시 시작될 수 있다",
+      "컴파일이 항상 실패한다",
+      "Future가 Stream으로 바뀐다",
+      "StatefulWidget이 StatelessWidget으로 바뀐다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Flutter API: FutureBuilder",
+    "sourceUrl": "https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html"
+  },
+  {
+    "id": "flutter006",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "BuildContext를 설명한 것으로 가장 알맞은 것은?",
+    "options": [
+      "위젯 트리 안의 위치와 관련 API를 제공하는 객체",
+      "네트워크 요청 전용 클라이언트",
+      "이미지 캐시 저장소",
+      "Dart isolate 관리자"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Flutter API: BuildContext",
+    "sourceUrl": "https://api.flutter.dev/flutter/widgets/BuildContext-class.html"
+  },
+  {
+    "id": "flutter007",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Element tree가 필요한 이유로 맞는 것은?",
+    "options": [
+      "immutable Widget 대신 상태와 render object 연결 정보를 보존한다",
+      "HTTP 캐시를 유지한다",
+      "앱 바이너리를 압축한다",
+      "Android Manifest를 생성한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 3,
+    "sourceTitle": "Flutter docs: Inside Flutter",
+    "sourceUrl": "https://docs.flutter.dev/resources/inside-flutter"
+  },
+  {
+    "id": "flutter008",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Flutter에서 const Widget 사용이 성능에 도움이 되는 이유와 가장 가까운 것은?",
+    "options": [
+      "동일 Widget 인스턴스를 재사용해 불필요한 비교/생성을 줄일 수 있다",
+      "네트워크 응답을 자동 캐시한다",
+      "State를 영구 저장한다",
+      "GPU 셰이더를 미리 컴파일한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Flutter docs: Inside Flutter",
+    "sourceUrl": "https://docs.flutter.dev/resources/inside-flutter"
+  },
+  {
+    "id": "flutter009",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Ephemeral state의 예로 가장 적절한 것은?",
+    "options": [
+      "BottomNavigationBar의 현재 선택 탭",
+      "사용자 로그인 토큰",
+      "서버에 저장된 장바구니",
+      "여러 화면이 공유하는 알림 목록"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Ephemeral vs app state",
+    "sourceUrl": "https://docs.flutter.dev/data-and-backend/state-mgmt/ephemeral-vs-app"
+  },
+  {
+    "id": "flutter010",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "App state에 가까운 것은?",
+    "options": [
+      "여러 화면에서 공유되고 세션 간 유지하고 싶은 데이터",
+      "한 TextField의 커서 깜빡임 상태",
+      "한 애니메이션의 현재 프레임",
+      "PageView의 현재 페이지처럼 한 위젯 내부에 갇힌 상태"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Ephemeral vs app state",
+    "sourceUrl": "https://docs.flutter.dev/data-and-backend/state-mgmt/ephemeral-vs-app"
+  },
+  {
+    "id": "flutter011",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "AnimationController를 사용할 때 Ticker의 역할과 가장 가까운 것은?",
+    "options": [
+      "프레임 타이밍에 맞춰 애니메이션 값을 갱신하도록 신호를 준다",
+      "HTTP 요청을 재시도한다",
+      "위젯 트리를 직렬화한다",
+      "Android Activity를 생성한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Flutter docs: Animations overview",
+    "sourceUrl": "https://docs.flutter.dev/ui/animations/overview"
+  },
+  {
+    "id": "flutter012",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Flutter의 build 메서드에 대한 좋은 가정은?",
+    "options": [
+      "매 프레임 호출될 수 있다고 보고 가볍게 작성한다",
+      "앱 실행 중 정확히 한 번만 호출된다",
+      "비동기 API 호출을 항상 그 안에서 시작해야 한다",
+      "호출되면 State가 반드시 dispose된다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Flutter API: FutureBuilder",
+    "sourceUrl": "https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html"
+  },
+  {
+    "id": "flutter013",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "StatelessWidget이 적합한 경우는?",
+    "options": [
+      "자체 mutable 상태 없이 입력값으로 UI를 표현할 때",
+      "프레임마다 직접 캔버스를 필수로 그릴 때",
+      "항상 네트워크 요청을 저장해야 할 때",
+      "플랫폼 View만 사용할 때"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Introduction to widgets",
+    "sourceUrl": "https://docs.flutter.dev/ui/widgets-intro"
+  },
+  {
+    "id": "flutter014",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "StatefulWidget과 State의 관계로 맞는 것은?",
+    "options": [
+      "StatefulWidget 자체가 항상 mutable이다",
+      "State는 한 번도 재사용되지 않는다",
+      "build는 State와 무관하다",
+      "State 객체가 변경 가능한 상태와 build 로직을 가진다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Introduction to widgets",
+    "sourceUrl": "https://docs.flutter.dev/ui/widgets-intro"
+  },
+  {
+    "id": "flutter015",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "InheritedWidget 계열이 해결하는 문제는?",
+    "options": [
+      "이미지 압축",
+      "HTTP 인증",
+      "위젯 트리 아래로 데이터를 효율적으로 전달한다",
+      "네이티브 앱 서명"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Flutter docs: State management",
+    "sourceUrl": "https://docs.flutter.dev/data-and-backend/state-mgmt/intro"
+  },
+  {
+    "id": "flutter016",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Provider/Riverpod 같은 상태 관리가 필요한 이유는?",
+    "options": [
+      "Dart 문법을 바꾸기 위해",
+      "여러 위젯이 공유하는 상태를 체계적으로 다루기 위해",
+      "폰트를 자동 생성하기 위해",
+      "APK 크기를 반드시 줄이기 위해"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: State management",
+    "sourceUrl": "https://docs.flutter.dev/data-and-backend/state-mgmt/intro"
+  },
+  {
+    "id": "flutter017",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "setState 사용 시 주의점은?",
+    "options": [
+      "상태 변경을 동기적으로 기록하고 build를 다시 예약한다",
+      "비동기 콜백 자체를 setState 내부에 await해야 한다",
+      "앱 전체를 재시작한다",
+      "위젯을 dispose한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Flutter docs: Introduction to widgets",
+    "sourceUrl": "https://docs.flutter.dev/ui/widgets-intro"
+  },
+  {
+    "id": "flutter018",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "StreamBuilder가 FutureBuilder보다 적합한 경우는?",
+    "options": [
+      "단 한 번의 Future 결과만 처리할 때",
+      "정적 텍스트만 표시할 때",
+      "라우터를 생성할 때",
+      "여러 번 도착하는 비동기 이벤트를 UI에 반영할 때"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Flutter API: StreamBuilder",
+    "sourceUrl": "https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html"
+  },
+  {
+    "id": "flutter019",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "BuildContext 사용 시 조심할 점은?",
+    "options": [
+      "context는 네트워크 요청 객체다",
+      "context는 빌드 중 null이다",
+      "비동기 gap 이후 context가 여전히 mounted인지 확인해야 한다",
+      "context는 항상 전역 싱글턴이다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 3,
+    "sourceTitle": "Flutter API: BuildContext",
+    "sourceUrl": "https://api.flutter.dev/flutter/widgets/BuildContext-class.html"
+  },
+  {
+    "id": "flutter020",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Key를 사용하는 대표 이유는?",
+    "options": [
+      "Dart isolate 생성",
+      "위젯 트리 변경 중 Element/State 식별을 돕기 위해",
+      "HTTP 캐시 제어",
+      "이미지 디코딩"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "Flutter docs: Keys",
+    "sourceUrl": "https://docs.flutter.dev/ui#keys"
+  },
+  {
+    "id": "flutter021",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "GlobalKey를 남용하면 좋지 않은 이유는?",
+    "options": [
+      "비용과 결합도가 커질 수 있다",
+      "컴파일이 항상 실패한다",
+      "StatelessWidget만 가능하다",
+      "색상을 사용할 수 없다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 3,
+    "sourceTitle": "Flutter docs: Keys",
+    "sourceUrl": "https://docs.flutter.dev/ui#keys"
+  },
+  {
+    "id": "flutter022",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "layout constraint 모델의 핵심 문장으로 맞는 것은?",
+    "options": [
+      "자식이 항상 부모 크기를 강제한다",
+      "모든 위젯은 절대 좌표만 쓴다",
+      "레이아웃은 CSSOM으로 계산된다",
+      "부모는 제약을 내려주고 자식은 크기를 선택한다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "Flutter docs: Layouts",
+    "sourceUrl": "https://docs.flutter.dev/ui/layout"
+  },
+  {
+    "id": "flutter023",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Expanded가 필요한 대표 상황은?",
+    "options": [
+      "앱 라우팅",
+      "JSON 파싱",
+      "Row/Column의 남은 공간을 자식에게 나눠줄 때",
+      "네트워크 이미지 캐시"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Layouts",
+    "sourceUrl": "https://docs.flutter.dev/ui/layout"
+  },
+  {
+    "id": "flutter024",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Flexible과 Expanded의 관계로 맞는 것은?",
+    "options": [
+      "Expanded는 Stack에서만 쓴다",
+      "Expanded는 tight fit을 쓰는 Flexible의 특수한 형태에 가깝다",
+      "서로 완전히 무관하다",
+      "Flexible은 StatefulWidget에서 금지된다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 3,
+    "sourceTitle": "Flutter docs: Layouts",
+    "sourceUrl": "https://docs.flutter.dev/ui/layout"
+  },
+  {
+    "id": "flutter025",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Stack 위젯의 주된 용도는?",
+    "options": [
+      "자식들을 겹쳐 배치한다",
+      "리스트를 지연 생성한다",
+      "텍스트 입력을 검증한다",
+      "Future를 관찰한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Layouts",
+    "sourceUrl": "https://docs.flutter.dev/ui/layout"
+  },
+  {
+    "id": "flutter026",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "ListView.builder의 장점은?",
+    "options": [
+      "모든 항목을 반드시 즉시 생성",
+      "스크롤을 금지",
+      "상태 관리를 자동 해결",
+      "필요한 항목을 lazily build해 긴 목록에 유리하다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Layouts",
+    "sourceUrl": "https://docs.flutter.dev/ui/layout"
+  },
+  {
+    "id": "flutter027",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "AnimationController를 dispose해야 하는 이유는?",
+    "options": [
+      "라우트를 등록하기 위해",
+      "폰트를 압축하기 위해",
+      "Ticker 같은 리소스를 해제하기 위해",
+      "위젯을 immutable로 만들기 위해"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Flutter docs: Animations",
+    "sourceUrl": "https://docs.flutter.dev/ui/animations"
+  },
+  {
+    "id": "flutter028",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Hero 애니메이션은 주로 무엇에 쓰이나?",
+    "options": [
+      "폼 검증",
+      "화면 전환 사이 공유 요소 이동 효과",
+      "DB 마이그레이션",
+      "HTTP 캐싱"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Animations",
+    "sourceUrl": "https://docs.flutter.dev/ui/animations"
+  },
+  {
+    "id": "flutter029",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Tween의 역할은?",
+    "options": [
+      "시작 값과 끝 값 사이 값을 보간한다",
+      "위젯 트리를 저장한다",
+      "Future를 취소한다",
+      "에셋을 압축한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Animations",
+    "sourceUrl": "https://docs.flutter.dev/ui/animations"
+  },
+  {
+    "id": "flutter030",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Isolate가 필요한 대표 상황은?",
+    "options": [
+      "간단한 Text 표시",
+      "색상 변경만",
+      "버튼 padding 조정",
+      "무거운 CPU 작업을 UI isolate 밖에서 처리할 때"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "Flutter docs: Concurrency and isolates",
+    "sourceUrl": "https://docs.flutter.dev/perf/isolates"
+  },
+  {
+    "id": "flutter031",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "compute 함수의 용도와 가까운 것은?",
+    "options": [
+      "이미지 에셋 선언",
+      "State dispose",
+      "짧은 CPU 작업을 별도 isolate에서 실행하기 쉽게 한다",
+      "라우트 이름 생성"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Flutter docs: Concurrency and isolates",
+    "sourceUrl": "https://docs.flutter.dev/perf/isolates"
+  },
+  {
+    "id": "flutter032",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Flutter 성능에서 build 메서드 작성 원칙은?",
+    "options": [
+      "매번 Future 생성 권장",
+      "자주 호출될 수 있으므로 가볍게 유지한다",
+      "절대 호출되지 않는다고 가정",
+      "항상 파일 IO 수행"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "Flutter docs: Performance best practices",
+    "sourceUrl": "https://docs.flutter.dev/perf/best-practices"
+  },
+  {
+    "id": "flutter033",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "const 생성자를 쓰면 좋은 이유는?",
+    "options": [
+      "동일한 불변 위젯 인스턴스 재사용과 불필요한 작업 감소에 도움",
+      "상태를 영구 저장",
+      "네트워크 요청 자동 재시도",
+      "모든 rebuild 차단"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Flutter docs: Performance best practices",
+    "sourceUrl": "https://docs.flutter.dev/perf/best-practices"
+  },
+  {
+    "id": "flutter034",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "RepaintBoundary의 목적은?",
+    "options": [
+      "라우팅 테이블 생성",
+      "JSON 직렬화",
+      "키보드 포커스 관리",
+      "다시 그려야 하는 영역을 분리해 paint 비용을 줄이는 데 도움"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 3,
+    "sourceTitle": "Flutter docs: Performance best practices",
+    "sourceUrl": "https://docs.flutter.dev/perf/best-practices"
+  },
+  {
+    "id": "flutter035",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Navigator의 push는 무엇을 하는가?",
+    "options": [
+      "앱을 종료",
+      "State를 dispose만 수행",
+      "새 route를 스택에 올린다",
+      "현재 route를 제거"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Navigation and routing",
+    "sourceUrl": "https://docs.flutter.dev/ui/navigation"
+  },
+  {
+    "id": "flutter036",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Navigator의 pop은 무엇을 하는가?",
+    "options": [
+      "위젯 tree 전체 재생성",
+      "현재 route를 스택에서 제거하고 이전 화면으로 돌아간다",
+      "새 화면 추가",
+      "앱 캐시 삭제"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Navigation and routing",
+    "sourceUrl": "https://docs.flutter.dev/ui/navigation"
+  },
+  {
+    "id": "flutter037",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "선언형 라우팅 패키지가 유용한 경우는?",
+    "options": [
+      "URL/앱 상태와 화면 구성을 일관되게 관리할 때",
+      "이미지 압축만 필요할 때",
+      "단일 Text 위젯만 있을 때",
+      "Dart 타입 추론을 끌 때"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 3,
+    "sourceTitle": "Flutter docs: Navigation and routing",
+    "sourceUrl": "https://docs.flutter.dev/ui/navigation"
+  },
+  {
+    "id": "flutter038",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "assets를 쓰려면 보통 어디에 선언해야 하나?",
+    "options": [
+      "AndroidManifest만",
+      "Info.plist만",
+      "main.dart 주석",
+      "pubspec.yaml의 flutter assets"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Assets and images",
+    "sourceUrl": "https://docs.flutter.dev/ui/assets/assets-and-images"
+  },
+  {
+    "id": "flutter039",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Image.asset이 주로 읽는 것은?",
+    "options": [
+      "SQLite 테이블",
+      "라우트 인자",
+      "앱 번들에 포함된 에셋 이미지",
+      "원격 HTTP 전용 이미지"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Assets and images",
+    "sourceUrl": "https://docs.flutter.dev/ui/assets/assets-and-images"
+  },
+  {
+    "id": "flutter040",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Form 위젯의 주된 용도는?",
+    "options": [
+      "앱 서명",
+      "여러 입력 필드의 검증과 저장을 묶어 관리",
+      "애니메이션 프레임 생성",
+      "이미지 렌더링 엔진 선택"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Forms",
+    "sourceUrl": "https://docs.flutter.dev/cookbook/forms/validation"
+  },
+  {
+    "id": "flutter041",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "TextEditingController를 dispose해야 하는 이유는?",
+    "options": [
+      "컨트롤러가 가진 리소스와 리스너를 정리하기 위해",
+      "텍스트를 immutable로 만들기 위해",
+      "라우트를 유지하기 위해",
+      "HTTP 요청 종료"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Flutter docs: Forms",
+    "sourceUrl": "https://docs.flutter.dev/cookbook/forms/validation"
+  },
+  {
+    "id": "flutter042",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "FocusNode를 직접 만들었다면?",
+    "options": [
+      "절대 dispose하면 안 된다",
+      "항상 전역 변수로 둔다",
+      "build마다 새로 만들어야 한다",
+      "dispose로 정리해야 한다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "Flutter docs: Forms",
+    "sourceUrl": "https://docs.flutter.dev/cookbook/forms/validation"
+  },
+  {
+    "id": "flutter043",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "MaterialApp의 대표 역할은?",
+    "options": [
+      "SQL 연결",
+      "APK 서명",
+      "Material Design 기반 앱 구조, 테마, 라우팅 기반을 제공한다",
+      "이미지 압축"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Introduction to widgets",
+    "sourceUrl": "https://docs.flutter.dev/ui/widgets-intro"
+  },
+  {
+    "id": "flutter044",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "ThemeData를 쓰는 이유는?",
+    "options": [
+      "에셋 삭제",
+      "앱 전체 시각 스타일을 일관되게 적용한다",
+      "비동기 작업 취소",
+      "Dart 버전 고정"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Introduction to widgets",
+    "sourceUrl": "https://docs.flutter.dev/ui/widgets-intro"
+  },
+  {
+    "id": "flutter045",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "MediaQuery가 제공하는 정보는?",
+    "options": [
+      "화면 크기, 방향, 패딩 등 미디어 환경 정보",
+      "DB 스키마",
+      "HTTP 헤더",
+      "GC 세대"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Flutter API: BuildContext",
+    "sourceUrl": "https://api.flutter.dev/flutter/widgets/BuildContext-class.html"
+  },
+  {
+    "id": "flutter046",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "SafeArea의 목적은?",
+    "options": [
+      "비밀번호 암호화",
+      "네트워크 캐시",
+      "라우트 보호",
+      "노치/상태바 등 시스템 영역과 겹치지 않게 배치한다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Layouts",
+    "sourceUrl": "https://docs.flutter.dev/ui/layout"
+  },
+  {
+    "id": "flutter047",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Hot reload의 장점은?",
+    "options": [
+      "DB 백업",
+      "메모리 누수 자동 해결",
+      "상태를 유지한 채 코드 변경을 빠르게 반영할 수 있다",
+      "릴리즈 바이너리 서명"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "Flutter docs: Architectural overview",
+    "sourceUrl": "https://docs.flutter.dev/resources/architectural-overview"
+  },
+  {
+    "id": "flutter048",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Flutter web/desktop/mobile UI 일관성의 기반은?",
+    "options": [
+      "Android XML만 사용",
+      "자체 렌더링 엔진과 위젯 시스템",
+      "각 플랫폼 HTML만 사용",
+      "iOS UIKit만 사용"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "Flutter docs: Architectural overview",
+    "sourceUrl": "https://docs.flutter.dev/resources/architectural-overview"
+  },
+  {
+    "id": "flutter049",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "Semantics 위젯은 무엇과 관련 있나?",
+    "options": [
+      "접근성 정보 제공",
+      "SQL 인덱스",
+      "이미지 압축률",
+      "HTTP 상태 코드"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 3,
+    "sourceTitle": "Flutter docs: Introduction to widgets",
+    "sourceUrl": "https://docs.flutter.dev/ui/widgets-intro"
+  },
+  {
+    "id": "flutter050",
+    "type": "multipleChoice",
+    "category": "Flutter",
+    "question": "ValueListenableBuilder가 적합한 경우는?",
+    "options": [
+      "단발성 Future 처리만",
+      "라우트 인증만",
+      "앱 아이콘 생성만",
+      "ValueListenable 값 변경에 따라 일부 UI를 다시 빌드할 때"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "Flutter docs: State management",
+    "sourceUrl": "https://docs.flutter.dev/data-and-backend/state-mgmt/intro"
+  },
+  {
+    "id": "android001",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Activity가 처음 생성될 때 반드시 구현하는 핵심 콜백은?",
+    "options": [
+      "onCreate()",
+      "onPause()",
+      "onStop()",
+      "onDestroy()"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: Activity lifecycle",
+    "sourceUrl": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+  },
+  {
+    "id": "android002",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Activity lifecycle의 주요 콜백 집합에 포함되지 않는 것은?",
+    "options": [
+      "onCreate()",
+      "onStart()",
+      "onResume()",
+      "onAttach()"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: Activity lifecycle",
+    "sourceUrl": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+  },
+  {
+    "id": "android003",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Activity A가 Activity B를 시작할 때 일반적인 순서로 맞는 것은?",
+    "options": [
+      "A onPause 후 B onCreate/onStart/onResume",
+      "B onDestroy 후 A onCreate",
+      "A onStop 후 B onPause",
+      "두 Activity가 동시에 onResume"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 3,
+    "sourceTitle": "Android Developers: Activity lifecycle",
+    "sourceUrl": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+  },
+  {
+    "id": "android004",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "화면 회전 같은 configuration change가 기본적으로 유발할 수 있는 일은?",
+    "options": [
+      "Activity 재생성",
+      "앱 패키지 재설치",
+      "ViewModel 즉시 삭제",
+      "Manifest 자동 수정"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: Runtime changes",
+    "sourceUrl": "https://developer.android.com/guide/topics/resources/runtime-changes"
+  },
+  {
+    "id": "android005",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "ViewModel의 대표 장점은?",
+    "options": [
+      "configuration change 동안 UI 관련 데이터를 유지하기 좋다",
+      "모든 DB 트랜잭션을 자동 커밋한다",
+      "Activity 생성을 차단한다",
+      "Manifest 권한을 자동 추가한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: ViewModel overview",
+    "sourceUrl": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+  },
+  {
+    "id": "android006",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Activity scope의 ViewModel이 메모리에 남아있는 기간으로 가장 알맞은 것은?",
+    "options": [
+      "ViewModelStoreOwner가 사라질 때까지",
+      "onCreate()가 끝날 때까지만",
+      "매 recomposition마다",
+      "앱 설치가 해제될 때까지"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: ViewModel overview",
+    "sourceUrl": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+  },
+  {
+    "id": "android007",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "ANR이 발생하는 대표 원인은?",
+    "options": [
+      "UI thread가 너무 오래 차단됨",
+      "리소스 파일 이름이 길어짐",
+      "앱 아이콘 해상도가 낮음",
+      "패키지명이 길어짐"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: ANRs",
+    "sourceUrl": "https://developer.android.com/topic/performance/vitals/anr"
+  },
+  {
+    "id": "android008",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "입력 이벤트에 앱이 응답하지 않아 ANR로 이어질 수 있는 대표 시간 기준은?",
+    "options": [
+      "약 5초",
+      "약 50밀리초",
+      "약 1분",
+      "약 10분"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: ANRs",
+    "sourceUrl": "https://developer.android.com/topic/performance/vitals/anr"
+  },
+  {
+    "id": "android009",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "ANR을 줄이기 위한 방향으로 가장 적절한 것은?",
+    "options": [
+      "느린 I/O나 긴 계산을 main thread 밖으로 옮긴다",
+      "모든 작업을 onClick에서 동기 실행한다",
+      "UI thread에서 네트워크를 기다린다",
+      "잠금을 오래 잡아 main thread를 보호한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: ANRs",
+    "sourceUrl": "https://developer.android.com/topic/performance/vitals/anr"
+  },
+  {
+    "id": "android010",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "android:launchMode의 기본값은?",
+    "options": [
+      "standard",
+      "singleTask",
+      "singleInstance",
+      "transparent"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: activity element",
+    "sourceUrl": "https://developer.android.com/guide/topics/manifest/activity-element"
+  },
+  {
+    "id": "android011",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "standard 또는 singleTop launch mode에 대한 설명으로 맞는 것은?",
+    "options": [
+      "Activity가 여러 번 인스턴스화될 수 있다",
+      "Activity 인스턴스가 시스템 전체에 하나만 존재한다",
+      "항상 새 task의 root가 된다",
+      "Fragment 전용 옵션이다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: activity element",
+    "sourceUrl": "https://developer.android.com/guide/topics/manifest/activity-element"
+  },
+  {
+    "id": "android012",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Android에서 main thread가 담당하는 핵심 작업으로 가장 가까운 것은?",
+    "options": [
+      "UI 업데이트와 입력 이벤트 처리",
+      "APK 서명 키 생성",
+      "Gradle dependency 해석",
+      "Play Store 배포 승인"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: Better performance through threading",
+    "sourceUrl": "https://developer.android.com/topic/performance/threads"
+  },
+  {
+    "id": "android013",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "onPause()에서 오래 걸리는 작업을 피해야 하는 이유는?",
+    "options": [
+      "다음 화면 전환과 사용자 응답성을 지연시킬 수 있다",
+      "onPause는 절대 호출되지 않는다",
+      "onPause는 백그라운드 스레드다",
+      "onPause에서만 DB 생성 가능"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: Activity lifecycle",
+    "sourceUrl": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+  },
+  {
+    "id": "android014",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "onStop() 상태에 가까운 설명은?",
+    "options": [
+      "Activity가 처음 생성된다",
+      "Activity가 포그라운드에서 입력을 받는다",
+      "앱이 설치된다",
+      "Activity가 더 이상 사용자에게 보이지 않는다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: Activity lifecycle",
+    "sourceUrl": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+  },
+  {
+    "id": "android015",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "onDestroy()가 호출되는 경우로 맞는 것은?",
+    "options": [
+      "버튼 클릭마다 호출",
+      "Manifest 파싱 때만 호출",
+      "Activity가 종료되거나 시스템이 재생성하기 위해 제거할 때",
+      "항상 매 프레임 호출"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: Activity lifecycle",
+    "sourceUrl": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+  },
+  {
+    "id": "android016",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "configuration change 대응에서 ViewModel이 유용한 이유는?",
+    "options": [
+      "APK 크기 감소",
+      "Activity 재생성 동안 UI 관련 데이터를 유지할 수 있다",
+      "프로세스 종료 후에도 항상 유지",
+      "권한 요청 자동 승인"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: ViewModel",
+    "sourceUrl": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+  },
+  {
+    "id": "android017",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "SavedStateHandle이 적합한 데이터는?",
+    "options": [
+      "프로세스 재생성에도 복원해야 하는 작은 상태",
+      "대용량 이미지 전체",
+      "무한 스트림 객체",
+      "Activity Context"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 3,
+    "sourceTitle": "Android Developers: Saved state module for ViewModel",
+    "sourceUrl": "https://developer.android.com/topic/libraries/architecture/viewmodel/viewmodel-savedstate"
+  },
+  {
+    "id": "android018",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "ViewModel에 Activity Context를 오래 보관하면 위험한 이유는?",
+    "options": [
+      "컴파일이 불가능하다",
+      "ViewModel이 즉시 삭제된다",
+      "네트워크가 차단된다",
+      "메모리 누수로 이어질 수 있다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: ViewModel",
+    "sourceUrl": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+  },
+  {
+    "id": "android019",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "LiveData의 특징으로 맞는 것은?",
+    "options": [
+      "SQL 쿼리 언어",
+      "권한 선언 파일",
+      "LifecycleOwner 상태를 고려해 관찰자에게 데이터 변경을 전달한다",
+      "항상 백그라운드 서비스만 실행"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: LiveData",
+    "sourceUrl": "https://developer.android.com/topic/libraries/architecture/livedata"
+  },
+  {
+    "id": "android020",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Flow를 UI에서 수집할 때 lifecycle-aware 수집이 중요한 이유는?",
+    "options": [
+      "Manifest 병합을 막기 위해",
+      "화면이 보이지 않을 때 불필요한 수집을 줄이기 위해",
+      "항상 동기 실행하기 위해",
+      "권한을 자동 부여하기 위해"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: Kotlin coroutines on Android",
+    "sourceUrl": "https://developer.android.com/kotlin/coroutines"
+  },
+  {
+    "id": "android021",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Coroutine의 suspend 함수 의미로 맞는 것은?",
+    "options": [
+      "코루틴을 블로킹 없이 일시 중단할 수 있다",
+      "OS 스레드를 반드시 종료한다",
+      "항상 새 프로세스를 만든다",
+      "UI를 즉시 그린다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: Kotlin coroutines on Android",
+    "sourceUrl": "https://developer.android.com/kotlin/coroutines"
+  },
+  {
+    "id": "android022",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Dispatchers.IO가 적합한 작업은?",
+    "options": [
+      "UI 그리기",
+      "Compose recomposition만",
+      "Manifest 작성",
+      "파일/네트워크 같은 블로킹 I/O"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: Kotlin coroutines on Android",
+    "sourceUrl": "https://developer.android.com/kotlin/coroutines"
+  },
+  {
+    "id": "android023",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Dispatchers.Main이 필요한 대표 상황은?",
+    "options": [
+      "DB vacuum",
+      "이미지 해시 계산",
+      "UI 상태 업데이트",
+      "대용량 파일 압축"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: Kotlin coroutines on Android",
+    "sourceUrl": "https://developer.android.com/kotlin/coroutines"
+  },
+  {
+    "id": "android024",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "WorkManager가 적합한 작업은?",
+    "options": [
+      "터치 이벤트 처리",
+      "앱이 종료되어도 실행 보장이 필요한 지연 가능한 백그라운드 작업",
+      "즉시 UI 애니메이션",
+      "현재 Activity layout 계산"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 3,
+    "sourceTitle": "Android Developers: WorkManager",
+    "sourceUrl": "https://developer.android.com/topic/libraries/architecture/workmanager"
+  },
+  {
+    "id": "android025",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Room의 주된 역할은?",
+    "options": [
+      "SQLite 위에 추상화 계층을 제공해 로컬 DB 접근을 돕는다",
+      "권한 요청 UI 생성",
+      "이미지 압축",
+      "Activity launchMode 설정"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: Room",
+    "sourceUrl": "https://developer.android.com/training/data-storage/room"
+  },
+  {
+    "id": "android026",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Room DAO는 무엇을 정의하나?",
+    "options": [
+      "앱 아이콘",
+      "권한 그룹",
+      "Compose 테마",
+      "DB 접근 메서드"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: Room",
+    "sourceUrl": "https://developer.android.com/training/data-storage/room"
+  },
+  {
+    "id": "android027",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "DataStore가 SharedPreferences보다 권장되는 이유 중 하나는?",
+    "options": [
+      "모든 파일을 암호화",
+      "UI를 자동 생성",
+      "비동기적이고 일관성 있는 데이터 저장 API를 제공한다",
+      "항상 서버 DB를 대체"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 3,
+    "sourceTitle": "Android Developers: DataStore",
+    "sourceUrl": "https://developer.android.com/topic/libraries/architecture/datastore"
+  },
+  {
+    "id": "android028",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Jetpack Compose에서 recomposition은 언제 발생하나?",
+    "options": [
+      "네트워크 연결 때마다 무조건",
+      "상태 변경에 따라 관련 composable을 다시 실행할 때",
+      "앱 설치 때만",
+      "Manifest 변경 때만"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: Compose lifecycle",
+    "sourceUrl": "https://developer.android.com/develop/ui/compose/lifecycle"
+  },
+  {
+    "id": "android029",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Composable 함수에서 부작용을 직접 남발하면 안 되는 이유는?",
+    "options": [
+      "recomposition으로 여러 번 실행될 수 있기 때문",
+      "Composable은 한 번만 실행되기 때문",
+      "Composable은 UI와 무관하기 때문",
+      "부작용이 컴파일 오류라서"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: Compose lifecycle",
+    "sourceUrl": "https://developer.android.com/develop/ui/compose/lifecycle"
+  },
+  {
+    "id": "android030",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "remember의 역할은?",
+    "options": [
+      "프로세스 종료 후 영구 저장",
+      "권한 요청",
+      "DB 트랜잭션 커밋",
+      "recomposition 사이에 값을 기억한다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: State and Jetpack Compose",
+    "sourceUrl": "https://developer.android.com/develop/ui/compose/state"
+  },
+  {
+    "id": "android031",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "rememberSaveable의 장점은?",
+    "options": [
+      "APK 서명",
+      "스레드 우선순위 변경",
+      "구성 변경 등에서 저장 가능한 UI 상태 복원에 도움",
+      "네트워크 캐시"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: State and Jetpack Compose",
+    "sourceUrl": "https://developer.android.com/develop/ui/compose/state"
+  },
+  {
+    "id": "android032",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "state hoisting의 의미는?",
+    "options": [
+      "Activity를 종료한다",
+      "상태를 호출자 쪽으로 끌어올려 재사용성과 테스트성을 높인다",
+      "상태를 전역 변수로 숨긴다",
+      "상태 변경을 금지한다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 3,
+    "sourceTitle": "Android Developers: State and Jetpack Compose",
+    "sourceUrl": "https://developer.android.com/develop/ui/compose/state"
+  },
+  {
+    "id": "android033",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "ANR 방지를 위한 원칙은?",
+    "options": [
+      "main thread에서 긴 작업을 피한다",
+      "모든 네트워크를 main thread에서 수행",
+      "onClick에서 Thread.sleep 사용",
+      "DB 마이그레이션을 UI 이벤트 중 수행"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: ANRs",
+    "sourceUrl": "https://developer.android.com/topic/performance/vitals/anr"
+  },
+  {
+    "id": "android034",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "BroadcastReceiver에서 오래 걸리는 작업을 직접 처리하면 위험한 이유는?",
+    "options": [
+      "리시버는 UI만 그린다",
+      "항상 무한 시간 실행 가능",
+      "권한이 자동 승인된다",
+      "시간 제한과 ANR 위험이 있다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 3,
+    "sourceTitle": "Android Developers: ANRs",
+    "sourceUrl": "https://developer.android.com/topic/performance/vitals/anr"
+  },
+  {
+    "id": "android035",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Intent의 대표 용도는?",
+    "options": [
+      "이미지 디코딩",
+      "메모리 해제",
+      "컴포넌트 간 작업 요청이나 데이터 전달",
+      "DB 인덱스 생성"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: Intents and intent filters",
+    "sourceUrl": "https://developer.android.com/guide/components/intents-filters"
+  },
+  {
+    "id": "android036",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Explicit Intent는?",
+    "options": [
+      "DB 쿼리",
+      "대상 컴포넌트를 명시하는 Intent",
+      "대상을 시스템이 암시적으로 찾는 Intent",
+      "권한 선언"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: Intents and intent filters",
+    "sourceUrl": "https://developer.android.com/guide/components/intents-filters"
+  },
+  {
+    "id": "android037",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Implicit Intent는?",
+    "options": [
+      "수행할 action/data를 기반으로 처리할 컴포넌트를 찾게 한다",
+      "항상 같은 Activity 클래스 지정",
+      "권한 요청만 수행",
+      "UI 상태 저장"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: Intents and intent filters",
+    "sourceUrl": "https://developer.android.com/guide/components/intents-filters"
+  },
+  {
+    "id": "android038",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "AndroidManifest.xml의 역할은?",
+    "options": [
+      "런타임 로그 저장",
+      "SQLite 데이터 저장",
+      "이미지 압축",
+      "앱 컴포넌트, 권한, 메타데이터 등을 선언한다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: App manifest overview",
+    "sourceUrl": "https://developer.android.com/guide/topics/manifest/manifest-intro"
+  },
+  {
+    "id": "android039",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "runtime permission이 필요한 이유는?",
+    "options": [
+      "권한은 서버에서만 처리",
+      "Manifest가 없어도 됨",
+      "위험 권한은 실행 중 사용자 승인이 필요할 수 있다",
+      "모든 권한은 설치 시 자동 승인"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: App permissions",
+    "sourceUrl": "https://developer.android.com/guide/topics/permissions/overview"
+  },
+  {
+    "id": "android040",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "권한 요청 UX에서 중요한 점은?",
+    "options": [
+      "권한 설명 숨김",
+      "사용자에게 필요한 맥락에서 권한을 요청한다",
+      "앱 시작 시 모든 권한 강제",
+      "거부 시 앱 즉시 삭제"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: App permissions",
+    "sourceUrl": "https://developer.android.com/guide/topics/permissions/overview"
+  },
+  {
+    "id": "android041",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "foreground service를 쓰는 대표 상황은?",
+    "options": [
+      "사용자가 인지해야 하는 지속 작업",
+      "짧은 UI 클릭 처리",
+      "단순 문자열 포맷",
+      "Compose preview"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 3,
+    "sourceTitle": "Android Developers: App manifest overview",
+    "sourceUrl": "https://developer.android.com/guide/topics/manifest/manifest-intro"
+  },
+  {
+    "id": "android042",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "launchMode singleTop의 특징은?",
+    "options": [
+      "항상 새 task root 생성",
+      "항상 앱 종료",
+      "Fragment 전용",
+      "맨 위에 같은 Activity가 있으면 재사용될 수 있다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: App manifest overview",
+    "sourceUrl": "https://developer.android.com/guide/topics/manifest/manifest-intro"
+  },
+  {
+    "id": "android043",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "deep link의 목적은?",
+    "options": [
+      "CPU 스케줄링",
+      "이미지 캐시 삭제",
+      "외부 URL/intent로 앱의 특정 화면을 열 수 있게 한다",
+      "DB 암호화"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: Intents and intent filters",
+    "sourceUrl": "https://developer.android.com/guide/components/intents-filters"
+  },
+  {
+    "id": "android044",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "process death 대비가 필요한 이유는?",
+    "options": [
+      "Manifest가 자동 복원함",
+      "시스템이 백그라운드 프로세스를 종료할 수 있기 때문",
+      "Activity는 절대 종료되지 않음",
+      "ViewModel은 디스크 저장소임"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 3,
+    "sourceTitle": "Android Developers: Runtime changes",
+    "sourceUrl": "https://developer.android.com/guide/topics/resources/runtime-changes"
+  },
+  {
+    "id": "android045",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Room에서 main thread DB 접근을 피하는 이유는?",
+    "options": [
+      "UI 멈춤과 ANR을 유발할 수 있다",
+      "쿼리가 항상 실패한다",
+      "인덱스를 만들 수 없다",
+      "컴파일이 금지된다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: Better performance through threading",
+    "sourceUrl": "https://developer.android.com/topic/performance/threads"
+  },
+  {
+    "id": "android046",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "RecyclerView/List lazy rendering의 목적과 가까운 것은?",
+    "options": [
+      "모든 항목을 항상 동시에 그림",
+      "네트워크만 처리",
+      "권한만 요청",
+      "보이는 항목 중심으로 효율적으로 뷰를 재사용/구성한다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: Better performance through threading",
+    "sourceUrl": "https://developer.android.com/topic/performance/threads"
+  },
+  {
+    "id": "android047",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Compose LazyColumn이 적합한 경우는?",
+    "options": [
+      "DB 스키마 생성",
+      "권한 선언",
+      "긴 세로 목록을 효율적으로 표시할 때",
+      "단일 고정 아이콘만 표시"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: State and Jetpack Compose",
+    "sourceUrl": "https://developer.android.com/develop/ui/compose/state"
+  },
+  {
+    "id": "android048",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "collectAsStateWithLifecycle의 장점은?",
+    "options": [
+      "앱 아이콘 변경",
+      "Lifecycle에 맞춰 Flow 수집을 UI state로 변환한다",
+      "항상 Activity를 종료",
+      "권한 요청 자동 처리"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 3,
+    "sourceTitle": "Android Developers: Activity lifecycle",
+    "sourceUrl": "https://developer.android.com/guide/components/activities/activity-lifecycle"
+  },
+  {
+    "id": "android049",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "Repository 패턴을 쓰는 이유로 적절한 것은?",
+    "options": [
+      "데이터 소스 접근을 추상화해 ViewModel과 분리한다",
+      "Manifest를 제거",
+      "Activity 콜백을 없앰",
+      "모든 쿼리를 main thread로 강제"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Android Developers: ViewModel",
+    "sourceUrl": "https://developer.android.com/topic/libraries/architecture/viewmodel"
+  },
+  {
+    "id": "android050",
+    "type": "multipleChoice",
+    "category": "Android",
+    "question": "UI thread와 background thread 구분이 중요한 이유는?",
+    "options": [
+      "Android는 스레드를 지원하지 않아서",
+      "모든 작업이 UI에서만 가능해서",
+      "권한이 thread별이라서",
+      "UI 응답성과 안전한 UI 업데이트를 위해"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Android Developers: Better performance through threading",
+    "sourceUrl": "https://developer.android.com/topic/performance/threads"
+  },
+  {
+    "id": "ios001",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "Swift의 ARC는 무엇을 관리하기 위한 기능인가?",
+    "options": [
+      "앱 메모리 사용량 추적과 관리",
+      "네트워크 캐시 동기화",
+      "UI 제약 조건 자동 생성",
+      "앱 번들 서명"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: Automatic Reference Counting",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/"
+  },
+  {
+    "id": "ios002",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "Strong reference cycle을 끊을 때 자주 사용하는 참조는?",
+    "options": [
+      "weak 또는 unowned",
+      "static 또는 final",
+      "async 또는 await",
+      "public 또는 private"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: Automatic Reference Counting",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/"
+  },
+  {
+    "id": "ios003",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "weak reference에 대한 설명으로 맞는 것은?",
+    "options": [
+      "참조 대상이 해제되면 자동으로 nil이 될 수 있어 Optional이다",
+      "항상 nil이 될 수 없어서 Non-Optional이다",
+      "값 타입에만 사용할 수 있다",
+      "ARC를 비활성화한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Swift Book: Automatic Reference Counting",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/"
+  },
+  {
+    "id": "ios004",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "closure가 self를 캡처할 때 순환 참조를 줄이는 일반적 방법은?",
+    "options": [
+      "capture list에 [weak self] 또는 [unowned self]를 사용한다",
+      "closure를 전역 변수로 만든다",
+      "self를 문자열로 변환한다",
+      "ARC를 GC로 바꾼다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Swift Book: Automatic Reference Counting",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/"
+  },
+  {
+    "id": "ios005",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "Swift에서 structure와 enumeration은 일반적으로 어떤 타입인가?",
+    "options": [
+      "Value type",
+      "Reference type",
+      "Pointer type",
+      "Actor 전용 타입"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: Structures and Classes",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/"
+  },
+  {
+    "id": "ios006",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "Swift class instance의 일반적인 성격은?",
+    "options": [
+      "reference type으로 공유 참조될 수 있다",
+      "항상 value copy만 된다",
+      "함수를 가질 수 없다",
+      "ARC와 무관하다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: Structures and Classes",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/"
+  },
+  {
+    "id": "ios007",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "Swift의 기본 타입 Int, Bool, String, Array, Dictionary에 대한 설명으로 맞는 것은?",
+    "options": [
+      "많은 기본/컬렉션 타입은 value type으로 구현된다",
+      "모두 Objective-C class이다",
+      "모두 weak로 선언해야 한다",
+      "모두 nil만 저장한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Swift Book: Structures and Classes",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/"
+  },
+  {
+    "id": "ios008",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "Swift Optional이 표현하는 것은?",
+    "options": [
+      "값이 있거나 없을 수 있음",
+      "항상 비동기 결과",
+      "항상 배열",
+      "클래스 전용 상속"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: The Basics",
+    "sourceUrl": "https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html"
+  },
+  {
+    "id": "ios009",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "Swift의 type safety에 대한 설명으로 맞는 것은?",
+    "options": [
+      "컴파일 시 타입 불일치를 오류로 잡아준다",
+      "모든 값을 자동으로 문자열로 변환한다",
+      "런타임에서만 타입을 검사한다",
+      "타입 선언을 금지한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: The Basics",
+    "sourceUrl": "https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html"
+  },
+  {
+    "id": "ios010",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "Any 타입에 대한 설명으로 맞는 것은?",
+    "options": [
+      "다양한 타입의 값을 담을 수 있지만 사용 전 적절한 캐스팅이 필요하다",
+      "class 타입만 담는다",
+      "Int만 담는다",
+      "nil을 담을 수 없다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Swift Book: Types",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types/"
+  },
+  {
+    "id": "ios011",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "@autoreleasepool 블록에 대한 설명으로 맞는 것은?",
+    "options": [
+      "NSAutoreleasePool 객체를 직접 쓰는 것보다 효율적이며 ARC 사용 여부와 무관하게 사용할 수 있다",
+      "ARC를 완전히 끈다",
+      "Swift Optional을 해제한다",
+      "UI 스레드를 생성한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 3,
+    "sourceTitle": "Apple Developer: NSAutoreleasePool",
+    "sourceUrl": "https://developer.apple.com/documentation/foundation/nsautoreleasepool"
+  },
+  {
+    "id": "ios012",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "unowned 참조가 적합한 경우로 가장 가까운 것은?",
+    "options": [
+      "참조 대상이 참조하는 쪽보다 먼저 해제되지 않는다고 논리적으로 보장되는 관계",
+      "참조 대상이 언제든 nil이 될 수 있는 관계",
+      "값 타입 복사를 막고 싶은 경우",
+      "비동기 Task를 취소하고 싶은 경우"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 3,
+    "sourceTitle": "Swift Book: Automatic Reference Counting",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/"
+  },
+  {
+    "id": "ios013",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "Swift Optional Binding의 목적은?",
+    "options": [
+      "Optional에 값이 있을 때 안전하게 꺼내 사용한다",
+      "강제 언래핑만 허용",
+      "ARC를 끈다",
+      "클래스만 생성"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: The Basics",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/"
+  },
+  {
+    "id": "ios014",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "guard let의 장점으로 맞는 것은?",
+    "options": [
+      "항상 반복문 생성",
+      "Optional을 금지",
+      "메모리 해제",
+      "조건 불만족 시 일찍 빠져나가고 이후 범위에서 값을 사용한다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "Swift Book: The Basics",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/"
+  },
+  {
+    "id": "ios015",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "force unwrap(!) 사용 시 위험은?",
+    "options": [
+      "값 타입이 참조 타입으로 변함",
+      "ARC가 비활성화",
+      "nil이면 런타임 오류가 발생할 수 있다",
+      "컴파일이 항상 실패"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: The Basics",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/"
+  },
+  {
+    "id": "ios016",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "struct와 class의 큰 차이로 맞는 것은?",
+    "options": [
+      "class는 프로퍼티가 없다",
+      "struct는 값 타입, class는 참조 타입이다",
+      "둘 다 항상 참조 타입",
+      "struct는 메서드를 가질 수 없다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: Classes and Structures",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/"
+  },
+  {
+    "id": "ios017",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "mutating 키워드가 필요한 경우는?",
+    "options": [
+      "struct/enum 메서드가 self나 프로퍼티를 변경할 때",
+      "class 메서드가 항상 필요",
+      "프로토콜 선언 금지",
+      "ARC 해제"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Swift Book: Classes and Structures",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/"
+  },
+  {
+    "id": "ios018",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "let으로 선언한 struct 인스턴스는?",
+    "options": [
+      "항상 nil 가능",
+      "자동으로 class가 된다",
+      "ARC가 추적하지 않는다",
+      "프로퍼티 변경이 제한된다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: The Basics",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/"
+  },
+  {
+    "id": "ios019",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "protocol의 주된 목적은?",
+    "options": [
+      "메모리 해제",
+      "스레드 생성",
+      "타입이 구현해야 할 요구사항을 정의한다",
+      "인스턴스 생성을 금지"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: Protocols",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/"
+  },
+  {
+    "id": "ios020",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "protocol extension의 장점은?",
+    "options": [
+      "ARC를 비활성화",
+      "프로토콜 요구사항 또는 보조 동작의 기본 구현을 제공할 수 있다",
+      "프로토콜을 class로 변환",
+      "Optional을 제거"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 3,
+    "sourceTitle": "Swift Book: Protocols",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/"
+  },
+  {
+    "id": "ios021",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "associatedtype은 어디에서 주로 쓰이나?",
+    "options": [
+      "프로토콜에서 구체 타입을 나중에 정하게 할 때",
+      "클래스 상속 금지",
+      "URL 요청 생성",
+      "ViewController 생명주기"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 3,
+    "sourceTitle": "Swift Book: Protocols",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/"
+  },
+  {
+    "id": "ios022",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "generic 함수의 장점은?",
+    "options": [
+      "모든 타입 검사를 런타임으로 미룸",
+      "항상 Any 반환",
+      "ARC를 끔",
+      "타입 안정성을 유지하며 여러 타입에 재사용 가능하다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: Generics",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/"
+  },
+  {
+    "id": "ios023",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "where 절이 generic에서 하는 역할은?",
+    "options": [
+      "스토리보드 로드",
+      "메모리 해제",
+      "타입 매개변수에 추가 제약을 건다",
+      "HTTP 헤더 설정"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Swift Book: Generics",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/generics/"
+  },
+  {
+    "id": "ios024",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "throwing 함수 호출에 필요한 키워드는?",
+    "options": [
+      "mutating",
+      "try",
+      "await만",
+      "weak"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: Error Handling",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/errorhandling/"
+  },
+  {
+    "id": "ios025",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "do-catch의 역할은?",
+    "options": [
+      "던져진 오류를 처리한다",
+      "ARC 참조를 증가",
+      "프로토콜 채택",
+      "앱 실행 시작"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: Error Handling",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/errorhandling/"
+  },
+  {
+    "id": "ios026",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "defer의 특징은?",
+    "options": [
+      "즉시 비동기 실행",
+      "Optional 강제 해제",
+      "actor 생성",
+      "현재 scope를 벗어날 때 실행할 코드를 예약한다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "Swift Book: Error Handling",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/errorhandling/"
+  },
+  {
+    "id": "ios027",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "closure capture list가 필요한 대표 이유는?",
+    "options": [
+      "배열 정렬",
+      "앱 권한 요청",
+      "self 캡처 방식 등을 제어해 순환 참조를 줄인다",
+      "함수 이름 변경"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 3,
+    "sourceTitle": "Swift Book: Closures",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/"
+  },
+  {
+    "id": "ios028",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "escaping closure는?",
+    "options": [
+      "항상 동기 실행",
+      "함수 반환 후에도 실행될 수 있는 closure",
+      "함수 내부에서만 즉시 실행",
+      "값 타입만 캡처"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "Swift Book: Closures",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/"
+  },
+  {
+    "id": "ios029",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "@MainActor의 대표 목적은?",
+    "options": [
+      "UI 관련 코드를 main actor에서 실행하도록 보장하는 데 도움",
+      "DB 인덱스 생성",
+      "이미지 압축",
+      "Optional 제거"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Apple Developer: MainActor",
+    "sourceUrl": "https://developer.apple.com/documentation/swift/mainactor"
+  },
+  {
+    "id": "ios030",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "async/await의 목적은?",
+    "options": [
+      "항상 새 스레드 생성",
+      "ARC 중지",
+      "class를 struct로 변환",
+      "비동기 코드를 구조화된 형태로 작성한다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: Concurrency",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/"
+  },
+  {
+    "id": "ios031",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "Task의 용도와 가까운 것은?",
+    "options": [
+      "메모리 직접 해제",
+      "스토리보드 로드만",
+      "비동기 작업 단위를 생성하고 실행한다",
+      "프로토콜 기본 구현"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Swift Book: Concurrency",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/"
+  },
+  {
+    "id": "ios032",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "actor가 해결하려는 문제는?",
+    "options": [
+      "URL 인코딩",
+      "공유 mutable 상태의 동시 접근 안전성",
+      "이미지 렌더링",
+      "Optional 문법 제거"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 3,
+    "sourceTitle": "Swift Book: Declarations - Actors",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations/"
+  },
+  {
+    "id": "ios033",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "actor 외부에서 actor-isolated 멤버 접근 시 일반적으로 필요한 것은?",
+    "options": [
+      "await",
+      "weak",
+      "mutating",
+      "defer"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Swift Book: Declarations - Actors",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations/"
+  },
+  {
+    "id": "ios034",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "Sendable의 의미와 가까운 것은?",
+    "options": [
+      "항상 UI 타입",
+      "ARC 해제 타입",
+      "프로토콜 금지 타입",
+      "동시성 경계 사이에서 안전하게 전달 가능한 타입을 나타낸다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 3,
+    "sourceTitle": "Swift Book: Concurrency",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/"
+  },
+  {
+    "id": "ios035",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "weak 참조의 특징은?",
+    "options": [
+      "참조 카운트를 강하게 증가",
+      "값 타입 전용",
+      "참조 대상이 해제되면 nil이 될 수 있다",
+      "항상 non-optional"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: Automatic Reference Counting",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/"
+  },
+  {
+    "id": "ios036",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "unowned 참조가 적합한 경우는?",
+    "options": [
+      "HTTP 요청 취소",
+      "대상이 더 오래 산다고 보장되는 관계",
+      "언제든 nil 가능성이 큰 관계",
+      "값 타입 복사 방지"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 3,
+    "sourceTitle": "Swift Book: Automatic Reference Counting",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/"
+  },
+  {
+    "id": "ios037",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "strong reference cycle이 생기는 대표 상황은?",
+    "options": [
+      "두 객체가 서로 강한 참조를 유지한다",
+      "struct 값 복사",
+      "Optional binding",
+      "switch 문"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: Automatic Reference Counting",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/"
+  },
+  {
+    "id": "ios038",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "UIViewController의 viewDidLoad는 보통 언제 호출되나?",
+    "options": [
+      "매 프레임마다",
+      "앱 삭제 시",
+      "네트워크 응답마다",
+      "뷰가 메모리에 로드된 뒤 한 번 초기 설정할 때"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Apple Developer: UIViewController",
+    "sourceUrl": "https://developer.apple.com/documentation/uikit/uiviewcontroller"
+  },
+  {
+    "id": "ios039",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "viewWillAppear의 대표 용도는?",
+    "options": [
+      "메모리 해제만",
+      "프로토콜 채택",
+      "화면이 보이기 직전에 UI 갱신 등을 준비한다",
+      "앱 설치"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Apple Developer: UIViewController",
+    "sourceUrl": "https://developer.apple.com/documentation/uikit/uiviewcontroller"
+  },
+  {
+    "id": "ios040",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "viewDidDisappear는 언제 유용한가?",
+    "options": [
+      "Optional 해제 전용",
+      "화면이 사라진 후 작업 정리나 상태 갱신이 필요할 때",
+      "앱 시작 전",
+      "컴파일 시간"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "Apple Developer: UIViewController",
+    "sourceUrl": "https://developer.apple.com/documentation/uikit/uiviewcontroller"
+  },
+  {
+    "id": "ios041",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "UIApplicationDelegate의 대표 역할은?",
+    "options": [
+      "앱 생명주기 이벤트에 대응한다",
+      "HTTP 응답 파싱만",
+      "배열 정렬만",
+      "ARC 비활성화"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Apple Developer: UIApplicationDelegate",
+    "sourceUrl": "https://developer.apple.com/documentation/uikit/uiapplicationdelegate"
+  },
+  {
+    "id": "ios042",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "URLSession의 주된 용도는?",
+    "options": [
+      "메모리 참조 카운트 조절",
+      "프로토콜 기본 구현",
+      "스토리보드 생성",
+      "네트워크 데이터 전송 작업 수행"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Apple Developer: URLSession",
+    "sourceUrl": "https://developer.apple.com/documentation/foundation/urlsession"
+  },
+  {
+    "id": "ios043",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "Codable의 목적과 가까운 것은?",
+    "options": [
+      "ARC 순환 참조 해결",
+      "actor 격리",
+      "타입을 JSON 등 외부 표현과 인코딩/디코딩하기 쉽게 한다",
+      "UI 렌더링"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Swift Book: Types",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types/"
+  },
+  {
+    "id": "ios044",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "Equatable 프로토콜은 무엇을 가능하게 하나?",
+    "options": [
+      "URL 요청",
+      "== 비교 정의",
+      "비동기 실행",
+      "메모리 해제"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: Protocols",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/"
+  },
+  {
+    "id": "ios045",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "Hashable이 필요한 대표 상황은?",
+    "options": [
+      "Set 원소나 Dictionary 키로 사용",
+      "UIViewController 생명주기",
+      "URL 다운로드",
+      "ARC 해제"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "Swift Book: Protocols",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/"
+  },
+  {
+    "id": "ios046",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "enum associated value의 장점은?",
+    "options": [
+      "항상 raw value만 허용",
+      "class 상속을 강제",
+      "Optional 금지",
+      "case별로 관련 데이터를 함께 담을 수 있다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "Swift Book: Types",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types/"
+  },
+  {
+    "id": "ios047",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "switch가 enum과 잘 맞는 이유는?",
+    "options": [
+      "case를 무시해야 함",
+      "ARC를 제어함",
+      "case별 분기를 명확히 처리하고 exhaustiveness 검사를 받을 수 있다",
+      "항상 런타임만 검사"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Swift Book: The Basics",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/"
+  },
+  {
+    "id": "ios048",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "type inference의 의미는?",
+    "options": [
+      "Optional을 제거",
+      "컴파일러가 문맥으로 타입을 추론한다",
+      "런타임에만 타입 결정",
+      "모든 타입을 Any로 변환"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: The Basics",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/"
+  },
+  {
+    "id": "ios049",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "access control의 목적은?",
+    "options": [
+      "선언의 사용 가능 범위를 제한한다",
+      "메모리 압축",
+      "비동기 취소",
+      "URL 인코딩"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: Types",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types/"
+  },
+  {
+    "id": "ios050",
+    "type": "multipleChoice",
+    "category": "iOS",
+    "question": "extension의 대표 용도는?",
+    "options": [
+      "타입 메모리 주소 변경",
+      "ARC 끄기",
+      "앱 생명주기 종료",
+      "기존 타입에 기능을 추가한다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Swift Book: Types",
+    "sourceUrl": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/types/"
+  },
+  {
+    "id": "cs001",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "자료구조를 가장 잘 설명한 것은?",
+    "options": [
+      "효율적인 연산을 위해 정보를 조직하는 방식",
+      "CPU 클럭을 높이는 장치",
+      "네트워크 패킷 암호화 방식",
+      "UI 색상 체계"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "NIST DADS: data structure",
+    "sourceUrl": "https://xlinux.nist.gov/dads/HTML/dataStructure.html"
+  },
+  {
+    "id": "cs002",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Stack의 대표적인 접근 규칙은?",
+    "options": [
+      "FIFO",
+      "무작위 접근만 허용",
+      "항상 정렬 유지",
+      "LIFO"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs003",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Queue의 대표적인 접근 규칙은?",
+    "options": [
+      "항상 이진 탐색",
+      "가장 큰 값 우선 삭제",
+      "FIFO",
+      "LIFO"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs004",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Priority Queue에서 우선순위를 빠르게 다루는 데 자주 쓰이는 구조는?",
+    "options": [
+      "정규 표현식",
+      "Heap",
+      "순수 배열만",
+      "단일 포인터"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs005",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Binary Search를 적용하기 위한 핵심 전제는?",
+    "options": [
+      "데이터가 정렬되어 있어야 한다",
+      "데이터가 반드시 문자열이어야 한다",
+      "중복이 절대 없어야 한다",
+      "데이터가 그래프여야 한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs006",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Binary Search의 핵심 아이디어는?",
+    "options": [
+      "모든 값을 순서대로 확인한다",
+      "해시 충돌을 만든다",
+      "무작위 위치만 확인한다",
+      "검색 범위를 반복해서 절반으로 줄인다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs007",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Hash Table 평균 조회 성능을 O(1)에 가깝게 만드는 핵심은?",
+    "options": [
+      "모든 노드를 선형 탐색한다",
+      "트리를 후위 순회한다",
+      "키를 해시 값으로 버킷 위치에 매핑한다",
+      "항상 모든 키를 정렬한다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs008",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Hash Collision은 무엇인가?",
+    "options": [
+      "스택이 비는 상황",
+      "서로 다른 키가 같은 해시 위치나 값을 갖는 상황",
+      "키가 삭제되는 상황",
+      "배열이 정렬되는 상황"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs009",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Linked List의 장점으로 가장 적절한 것은?",
+    "options": [
+      "중간 삽입/삭제에서 포인터 조정으로 처리할 수 있다",
+      "임의 인덱스 접근이 항상 O(1)이다",
+      "항상 메모리를 연속 배치한다",
+      "해시 충돌이 없다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs010",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Array의 큰 특징은?",
+    "options": [
+      "각 원소가 반드시 포인터 두 개를 가진다",
+      "항상 FIFO로만 접근한다",
+      "자동으로 균형 트리가 된다",
+      "연속된 위치 기반 접근에 유리하다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs011",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Tree 자료구조에서 root는?",
+    "options": [
+      "마지막으로 삽입된 값",
+      "간선의 개수",
+      "부모가 없는 최상위 노드",
+      "항상 가장 작은 값"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs012",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Binary Search Tree의 기본 성질은?",
+    "options": [
+      "간선에만 값이 있다",
+      "왼쪽 서브트리 값은 작고 오른쪽 서브트리 값은 큰 순서를 유지한다",
+      "모든 노드가 자식 3개를 가진다",
+      "삽입 순서를 그대로 보존한다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs013",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Balanced Tree를 사용하는 주된 이유는?",
+    "options": [
+      "트리 높이를 관리해 탐색 성능 악화를 줄인다",
+      "네트워크 지연을 줄인다",
+      "모든 값을 해시한다",
+      "정렬을 금지한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs014",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Graph에서 vertex는 무엇인가?",
+    "options": [
+      "간선의 가중치",
+      "해시 버킷",
+      "스택 포인터",
+      "노드 또는 정점"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs015",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Graph에서 edge는 무엇인가?",
+    "options": [
+      "배열의 크기",
+      "힙의 루트 값",
+      "정점 사이의 연결",
+      "큐의 맨 앞 원소"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs016",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "DFS의 일반적인 탐색 방식은?",
+    "options": [
+      "정렬된 배열만 탐색한다",
+      "한 경로를 깊게 따라간 뒤 되돌아온다",
+      "현재 레벨을 모두 본 뒤 다음 레벨로 간다",
+      "항상 키를 해시한다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs017",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "BFS의 일반적인 탐색 방식은?",
+    "options": [
+      "시작점에서 가까운 레벨부터 넓게 탐색한다",
+      "가장 깊은 노드만 탐색한다",
+      "힙의 최댓값만 본다",
+      "문자열 접두사만 비교한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs018",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Topological Sort가 필요한 대표 상황은?",
+    "options": [
+      "무작위 숫자 생성",
+      "이미지 압축",
+      "비밀번호 해싱",
+      "의존 관계가 있는 작업 순서 결정"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 3,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs019",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Big-O 표기법은 주로 무엇을 나타내는가?",
+    "options": [
+      "메모리 주소",
+      "컴파일러 버전",
+      "입력 크기 증가에 따른 알고리즘 비용의 성장률",
+      "정확한 실행 초 단위"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs020",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "O(1)의 의미로 가장 가까운 것은?",
+    "options": [
+      "항상 가장 빠른 실제 구현이다",
+      "입력 크기와 무관하게 일정한 비용에 가깝다",
+      "입력만큼 선형 증가한다",
+      "입력의 제곱으로 증가한다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs021",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "O(n)의 의미로 가장 가까운 것은?",
+    "options": [
+      "입력 크기에 비례해 비용이 증가한다",
+      "항상 한 번만 실행된다",
+      "로그만큼만 증가한다",
+      "입력이 커질수록 비용이 줄어든다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs022",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "O(log n)이 자주 나타나는 대표 예는?",
+    "options": [
+      "단순 전체 순회",
+      "모든 쌍 비교",
+      "무한 루프",
+      "정렬된 데이터의 이진 탐색"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs023",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "O(n²)이 나타나기 쉬운 상황은?",
+    "options": [
+      "반씩 줄이는 탐색",
+      "상수 반환 함수",
+      "모든 원소 쌍을 중첩 반복으로 비교한다",
+      "한 번의 해시 조회"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs024",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Stable Sort의 의미는?",
+    "options": [
+      "중복 값을 삭제한다",
+      "동일한 키를 가진 원소들의 상대 순서를 유지한다",
+      "항상 O(1)이다",
+      "배열만 정렬한다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs025",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "In-place 알고리즘에 가까운 설명은?",
+    "options": [
+      "추가 메모리를 적게 쓰며 입력 공간을 주로 활용한다",
+      "항상 네트워크에서 실행된다",
+      "정렬 결과를 버린다",
+      "반드시 재귀를 금지한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs026",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Recursion에서 base case의 역할은?",
+    "options": [
+      "항상 예외를 던진다",
+      "힙을 정렬한다",
+      "HTTP 요청을 보낸다",
+      "재귀 호출이 멈추는 조건을 제공한다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs027",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Divide and Conquer의 핵심은?",
+    "options": [
+      "항상 하나의 전역 변수만 쓴다",
+      "캐시를 삭제한다",
+      "문제를 작은 부분 문제로 나누고 결과를 합친다",
+      "모든 데이터를 무작위로 섞는다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs028",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Dynamic Programming이 효과적인 조건은?",
+    "options": [
+      "정렬이 금지된다",
+      "겹치는 부분 문제와 최적 부분 구조가 있다",
+      "문제가 항상 무작위이다",
+      "입력이 반드시 그래프가 아니다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 3,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs029",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Greedy 알고리즘의 특징은?",
+    "options": [
+      "각 단계에서 현재 가장 좋아 보이는 선택을 한다",
+      "항상 모든 조합을 완전 탐색한다",
+      "결과를 절대 반환하지 않는다",
+      "정규식만 사용한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs030",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Memoization의 목적은?",
+    "options": [
+      "모든 데이터를 암호화한다",
+      "HTTP 요청을 압축한다",
+      "트랜잭션을 롤백한다",
+      "이미 계산한 결과를 저장해 중복 계산을 줄인다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs031",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Heap 자료구조에서 루트는 일반적으로 무엇을 보장하는가?",
+    "options": [
+      "항상 null",
+      "가장 긴 문자열",
+      "최소 힙/최대 힙 기준의 우선순위 원소",
+      "가장 최근 삽입 원소"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs032",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Trie가 특히 잘 맞는 문제는?",
+    "options": [
+      "이미지 렌더링만",
+      "문자열 접두사 기반 검색",
+      "실수 행렬 곱셈만",
+      "CPU 스케줄링만"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 3,
+    "sourceTitle": "NIST DADS: Dictionary of Algorithms and Data Structures",
+    "sourceUrl": "https://xlinux.nist.gov/dads/"
+  },
+  {
+    "id": "cs033",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Set 자료구조의 핵심 성질은?",
+    "options": [
+      "중복 없는 원소 집합을 표현한다",
+      "항상 삽입 순서만 보장한다",
+      "키-값 쌍만 저장한다",
+      "반드시 FIFO이다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "Python Docs: Data Structures",
+    "sourceUrl": "https://docs.python.org/3/tutorial/datastructures.html"
+  },
+  {
+    "id": "cs034",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Dictionary/Map의 핵심 사용처는?",
+    "options": [
+      "항상 정렬된 리스트를 만든다",
+      "스레드를 생성한다",
+      "그래픽을 그린다",
+      "키를 이용해 값을 찾는다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "Python Docs: Data Structures",
+    "sourceUrl": "https://docs.python.org/3/tutorial/datastructures.html"
+  },
+  {
+    "id": "cs035",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Immutable tuple 같은 구조를 쓰는 이유로 적절한 것은?",
+    "options": [
+      "모든 타입 검사를 없앤다",
+      "항상 힙을 정렬한다",
+      "생성 후 값 변경을 막아 안정적인 묶음을 표현한다",
+      "네트워크 속도를 높인다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "Python Docs: Data Structures",
+    "sourceUrl": "https://docs.python.org/3/tutorial/datastructures.html"
+  },
+  {
+    "id": "cs036",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "HTTP GET의 주된 의미는?",
+    "options": [
+      "TCP 터널을 만든다",
+      "리소스의 표현을 조회한다",
+      "리소스를 반드시 생성한다",
+      "서버 상태를 반드시 삭제한다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "MDN: HTTP request methods",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods"
+  },
+  {
+    "id": "cs037",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "HTTP POST의 일반적인 의미는?",
+    "options": [
+      "서버가 처리할 데이터를 제출한다",
+      "항상 안전한 조회만 수행한다",
+      "항상 캐시만 비운다",
+      "항상 연결을 닫는다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "MDN: HTTP request methods",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods"
+  },
+  {
+    "id": "cs038",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "HTTP PUT의 멱등성 설명으로 맞는 것은?",
+    "options": [
+      "항상 안전한 메서드이다",
+      "본문을 가질 수 없다",
+      "응답이 항상 204이다",
+      "같은 요청을 여러 번 보내도 의도한 효과가 한 번과 같다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "RFC 9110: HTTP Semantics",
+    "sourceUrl": "https://www.rfc-editor.org/rfc/rfc9110"
+  },
+  {
+    "id": "cs039",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "HTTP DELETE가 멱등으로 분류되는 이유와 가장 가까운 것은?",
+    "options": [
+      "서버 상태를 절대 바꾸지 않는다",
+      "본문이 필수다",
+      "같은 삭제 요청을 반복해도 의도한 최종 상태가 같다",
+      "항상 캐시된다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "RFC 9110: HTTP Semantics",
+    "sourceUrl": "https://www.rfc-editor.org/rfc/rfc9110"
+  },
+  {
+    "id": "cs040",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "HTTP safe method의 의미는?",
+    "options": [
+      "응답 본문이 없다",
+      "클라이언트가 서버 상태 변경을 요청하지 않는다",
+      "항상 TLS를 사용한다",
+      "항상 인증이 필요 없다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "MDN: Safe HTTP methods",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Glossary/Safe/HTTP"
+  },
+  {
+    "id": "cs041",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "다음 중 일반적으로 safe method인 것은?",
+    "options": [
+      "GET",
+      "POST",
+      "PATCH",
+      "DELETE"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "MDN: Safe HTTP methods",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Glossary/Safe/HTTP"
+  },
+  {
+    "id": "cs042",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "다음 중 일반적으로 멱등이지만 safe는 아닌 메서드는?",
+    "options": [
+      "POST",
+      "CONNECT",
+      "PATCH",
+      "PUT"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "RFC 9110: HTTP Semantics",
+    "sourceUrl": "https://www.rfc-editor.org/rfc/rfc9110"
+  },
+  {
+    "id": "cs043",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "HTTP 200 상태 코드의 대표 의미는?",
+    "options": [
+      "인증이 필요하다",
+      "서버 오류다",
+      "요청이 성공했다",
+      "리소스가 없다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "RFC 9110: HTTP Semantics",
+    "sourceUrl": "https://www.rfc-editor.org/rfc/rfc9110"
+  },
+  {
+    "id": "cs044",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "HTTP 201 상태 코드가 어울리는 상황은?",
+    "options": [
+      "메서드가 금지되었다",
+      "새 리소스가 생성되었다",
+      "캐시가 만료되었다",
+      "권한이 없다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "RFC 9110: HTTP Semantics",
+    "sourceUrl": "https://www.rfc-editor.org/rfc/rfc9110"
+  },
+  {
+    "id": "cs045",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "HTTP 204 상태 코드의 특징은?",
+    "options": [
+      "성공했지만 응답 본문이 없다",
+      "항상 리다이렉트다",
+      "항상 서버 오류다",
+      "항상 인증 실패다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "RFC 9110: HTTP Semantics",
+    "sourceUrl": "https://www.rfc-editor.org/rfc/rfc9110"
+  },
+  {
+    "id": "cs046",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "HTTP 301/308 계열 리다이렉트에서 핵심 의미는?",
+    "options": [
+      "요청 본문이 너무 크다",
+      "서버가 다운됐다",
+      "쿠키가 만료됐다",
+      "리소스 위치가 영구적으로 이동했다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "RFC 9110: HTTP Semantics",
+    "sourceUrl": "https://www.rfc-editor.org/rfc/rfc9110"
+  },
+  {
+    "id": "cs047",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "HTTP 400 상태 코드에 가까운 의미는?",
+    "options": [
+      "성공",
+      "캐시 사용",
+      "클라이언트 요청이 잘못되었다",
+      "서버 내부 오류"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "RFC 9110: HTTP Semantics",
+    "sourceUrl": "https://www.rfc-editor.org/rfc/rfc9110"
+  },
+  {
+    "id": "cs048",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "HTTP 401 상태 코드에 가까운 의미는?",
+    "options": [
+      "리소스 생성",
+      "인증이 필요하거나 실패했다",
+      "권한은 있으나 숨김",
+      "요청 성공"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "RFC 9110: HTTP Semantics",
+    "sourceUrl": "https://www.rfc-editor.org/rfc/rfc9110"
+  },
+  {
+    "id": "cs049",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "HTTP 403 상태 코드에 가까운 의미는?",
+    "options": [
+      "서버가 요청을 이해했지만 허용하지 않는다",
+      "인증 헤더 문법 오류만",
+      "항상 리다이렉트",
+      "항상 성공"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "RFC 9110: HTTP Semantics",
+    "sourceUrl": "https://www.rfc-editor.org/rfc/rfc9110"
+  },
+  {
+    "id": "cs050",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "HTTP 404 상태 코드에 가까운 의미는?",
+    "options": [
+      "요청 성공",
+      "서버가 응답을 캐시했다",
+      "메서드가 안전하다",
+      "요청한 리소스를 찾을 수 없다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "RFC 9110: HTTP Semantics",
+    "sourceUrl": "https://www.rfc-editor.org/rfc/rfc9110"
+  },
+  {
+    "id": "cs051",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "HTTP 409 상태 코드가 어울리는 상황은?",
+    "options": [
+      "본문 없음 성공",
+      "프로토콜 업그레이드",
+      "현재 리소스 상태와 요청이 충돌한다",
+      "인증 성공"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 3,
+    "sourceTitle": "RFC 9110: HTTP Semantics",
+    "sourceUrl": "https://www.rfc-editor.org/rfc/rfc9110"
+  },
+  {
+    "id": "cs052",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "HTTP 429 상태 코드가 나타내는 것은?",
+    "options": [
+      "쿠키 생성 성공",
+      "요청을 너무 많이 보냈다",
+      "서버가 영구 이동했다",
+      "문법이 올바르다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "RFC 9110: HTTP Semantics",
+    "sourceUrl": "https://www.rfc-editor.org/rfc/rfc9110"
+  },
+  {
+    "id": "cs053",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "HTTP 500 상태 코드의 의미로 맞는 것은?",
+    "options": [
+      "서버 내부 오류",
+      "클라이언트 문법 오류",
+      "새 리소스 생성",
+      "캐시 재사용"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "RFC 9110: HTTP Semantics",
+    "sourceUrl": "https://www.rfc-editor.org/rfc/rfc9110"
+  },
+  {
+    "id": "cs054",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "HTTP Cache-Control: no-store의 의도는?",
+    "options": [
+      "무조건 장기 캐시",
+      "요청을 POST로 변경",
+      "CORS 허용",
+      "응답을 저장하지 말라는 지시"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "MDN: HTTP caching",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching"
+  },
+  {
+    "id": "cs055",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "ETag의 대표 용도는?",
+    "options": [
+      "HTML 파싱",
+      "DNS 질의",
+      "리소스 버전 검증과 조건부 요청",
+      "쿠키 암호화"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "MDN: HTTP caching",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching"
+  },
+  {
+    "id": "cs056",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "CORS의 주된 목적은?",
+    "options": [
+      "이미지를 압축한다",
+      "브라우저가 허용된 교차 출처 접근을 제어하게 한다",
+      "서버 간 TCP 연결을 암호화한다",
+      "SQL 쿼리를 최적화한다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "MDN: Cross-Origin Resource Sharing",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS"
+  },
+  {
+    "id": "cs057",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Same-Origin Policy가 비교하는 origin 구성 요소는?",
+    "options": [
+      "스킴, 호스트, 포트",
+      "경로, 쿼리, fragment",
+      "쿠키 이름, 값, 만료일",
+      "HTML, CSS, JS"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "MDN: Same-origin policy",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy"
+  },
+  {
+    "id": "cs058",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "CORS preflight 요청에 주로 쓰이는 HTTP 메서드는?",
+    "options": [
+      "GET",
+      "DELETE",
+      "TRACE",
+      "OPTIONS"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "MDN: CORS preflight request",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Glossary/Preflight_request"
+  },
+  {
+    "id": "cs059",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Access-Control-Allow-Origin 헤더의 역할은?",
+    "options": [
+      "HTML을 압축한다",
+      "DB 트랜잭션을 커밋한다",
+      "응답을 읽을 수 있는 출처를 알려준다",
+      "비밀번호를 해싱한다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "MDN: Cross-Origin Resource Sharing",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS"
+  },
+  {
+    "id": "cs060",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "SameSite 쿠키 속성의 주된 목적은?",
+    "options": [
+      "자바스크립트를 번들링한다",
+      "교차 사이트 요청에서 쿠키 전송 범위를 제한한다",
+      "이미지 크기를 줄인다",
+      "SQL 인덱스를 만든다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "MDN: HTTP cookies",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies"
+  },
+  {
+    "id": "cs061",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "SQL Injection의 핵심 원인은?",
+    "options": [
+      "신뢰하지 않은 입력이 쿼리 구조로 해석된다",
+      "이미지가 너무 크다",
+      "CSS가 늦게 로드된다",
+      "DNS TTL이 짧다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "OWASP Top 10: Injection",
+    "sourceUrl": "https://owasp.org/Top10/A03_2021-Injection/"
+  },
+  {
+    "id": "cs062",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "SQL Injection 방어에 가장 적절한 것은?",
+    "options": [
+      "문자열 더하기로 쿼리 생성",
+      "에러 메시지 자세히 노출",
+      "관리자 권한 DB 계정 사용",
+      "파라미터화된 쿼리 사용"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "OWASP Top 10: Injection",
+    "sourceUrl": "https://owasp.org/Top10/A03_2021-Injection/"
+  },
+  {
+    "id": "cs063",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "XSS의 핵심 위험은?",
+    "options": [
+      "CPU 캐시 미스만 발생",
+      "DB 인덱스 자동 삭제",
+      "공격자 스크립트가 사용자의 브라우저에서 실행될 수 있다",
+      "디스크 조각 모음 실패"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "OWASP: Cross Site Scripting",
+    "sourceUrl": "https://owasp.org/www-community/attacks/xss/"
+  },
+  {
+    "id": "cs064",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Reflected XSS에 가까운 설명은?",
+    "options": [
+      "서버 로그가 압축된다",
+      "요청에 포함된 악성 입력이 응답에 바로 반사된다",
+      "DB에 저장된 스크립트가 나중에 실행된다",
+      "비밀번호 해시가 느리다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "OWASP: Cross Site Scripting",
+    "sourceUrl": "https://owasp.org/www-community/attacks/xss/"
+  },
+  {
+    "id": "cs065",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Stored XSS에 가까운 설명은?",
+    "options": [
+      "악성 스크립트가 서버에 저장되어 여러 사용자에게 전달된다",
+      "한 번의 GET만 실패한다",
+      "브라우저 캐시만 비워진다",
+      "트랜잭션이 롤백된다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "OWASP: Cross Site Scripting",
+    "sourceUrl": "https://owasp.org/www-community/attacks/xss/"
+  },
+  {
+    "id": "cs066",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "XSS 완화에 중요한 기본 원칙은?",
+    "options": [
+      "모든 입력을 GET으로 변경",
+      "쿠키 만료 제거",
+      "DB 인덱스 삭제",
+      "출력 컨텍스트에 맞는 인코딩과 검증"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "OWASP: Cross Site Scripting",
+    "sourceUrl": "https://owasp.org/www-community/attacks/xss/"
+  },
+  {
+    "id": "cs067",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "CSRF 공격의 핵심은?",
+    "options": [
+      "이미지를 손상시킨다",
+      "해시 충돌만 만든다",
+      "인증된 사용자의 브라우저가 원치 않는 요청을 보내게 한다",
+      "서버 CPU를 오버클럭한다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "OWASP: Cross-Site Request Forgery",
+    "sourceUrl": "https://owasp.org/www-community/attacks/csrf"
+  },
+  {
+    "id": "cs068",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "CSRF 방어에 흔히 쓰이는 것은?",
+    "options": [
+      "평문 비밀번호 저장",
+      "예측 불가능한 CSRF 토큰",
+      "SQL 문자열 연결",
+      "디렉터리 목록 공개"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "OWASP: Cross-Site Request Forgery",
+    "sourceUrl": "https://owasp.org/www-community/attacks/csrf"
+  },
+  {
+    "id": "cs069",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Broken Access Control의 예로 적절한 것은?",
+    "options": [
+      "권한 없는 사용자가 다른 사용자의 리소스를 조회한다",
+      "CSS 파일이 늦게 로드된다",
+      "캐시 TTL이 길다",
+      "정렬 알고리즘이 느리다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "OWASP Top 10: Broken Access Control",
+    "sourceUrl": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/"
+  },
+  {
+    "id": "cs070",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "접근 제어에서 서버 측 검증이 중요한 이유는?",
+    "options": [
+      "클라이언트는 항상 신뢰 가능하기 때문",
+      "HTTP는 상태 코드가 없기 때문",
+      "브라우저가 SQL을 실행하기 때문",
+      "클라이언트 조작만으로 권한 우회를 막을 수 없기 때문"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "OWASP Top 10: Broken Access Control",
+    "sourceUrl": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/"
+  },
+  {
+    "id": "cs071",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Cryptographic Failures의 대표 위험은?",
+    "options": [
+      "HTML 태그가 닫히지 않는다",
+      "CPU가 쉬지 않는다",
+      "민감 데이터가 적절히 보호되지 않는다",
+      "배열이 정렬되지 않는다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "OWASP Top 10: Cryptographic Failures",
+    "sourceUrl": "https://owasp.org/Top10/A02_2021-Cryptographic_Failures/"
+  },
+  {
+    "id": "cs072",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "비밀번호 저장에 적절한 방식은?",
+    "options": [
+      "클라이언트 localStorage에만 저장",
+      "salt를 사용한 느린 단방향 해시",
+      "평문 저장",
+      "Base64만 적용"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "OWASP Top 10: Cryptographic Failures",
+    "sourceUrl": "https://owasp.org/Top10/A02_2021-Cryptographic_Failures/"
+  },
+  {
+    "id": "cs073",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "TLS의 주된 목적과 가장 가까운 것은?",
+    "options": [
+      "전송 중 데이터 기밀성과 무결성을 보호한다",
+      "DB 정규화를 수행한다",
+      "정렬을 빠르게 한다",
+      "HTML을 렌더링한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "OWASP Top 10: Cryptographic Failures",
+    "sourceUrl": "https://owasp.org/Top10/A02_2021-Cryptographic_Failures/"
+  },
+  {
+    "id": "cs074",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "인증(Authentication)의 의미는?",
+    "options": [
+      "무엇을 할 수 있는지 결정한다",
+      "데이터를 정렬한다",
+      "HTTP 캐시를 비운다",
+      "사용자가 누구인지 확인한다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 1,
+    "sourceTitle": "OWASP Top 10: Broken Access Control",
+    "sourceUrl": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/"
+  },
+  {
+    "id": "cs075",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "인가(Authorization)의 의미는?",
+    "options": [
+      "사용자 신원을 증명한다",
+      "HTML을 파싱한다",
+      "확인된 주체가 어떤 행동을 할 수 있는지 결정한다",
+      "비밀번호를 입력받는다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "OWASP Top 10: Broken Access Control",
+    "sourceUrl": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/"
+  },
+  {
+    "id": "cs076",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Principle of Least Privilege의 의미는?",
+    "options": [
+      "로그를 남기지 않는다",
+      "필요한 최소 권한만 부여한다",
+      "모든 사용자에게 관리자 권한 부여",
+      "권한 검사를 클라이언트에만 둔다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "OWASP Top 10: Broken Access Control",
+    "sourceUrl": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/"
+  },
+  {
+    "id": "cs077",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Content Security Policy의 주된 목적은?",
+    "options": [
+      "허용된 스크립트/리소스 출처를 제한해 XSS 피해를 줄인다",
+      "DB 트랜잭션을 빠르게 한다",
+      "HTTP 메서드를 모두 POST로 바꾼다",
+      "이미지 색상을 보정한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 3,
+    "sourceTitle": "MDN: Content Security Policy",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP"
+  },
+  {
+    "id": "cs078",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "민감한 오류 메시지를 그대로 노출하면 위험한 이유는?",
+    "options": [
+      "브라우저가 렌더링을 멈춘다",
+      "HTTP가 TCP를 쓰지 않는다",
+      "정렬이 불가능해진다",
+      "공격자에게 내부 구조 단서를 줄 수 있다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "OWASP Top 10: Injection",
+    "sourceUrl": "https://owasp.org/Top10/A03_2021-Injection/"
+  },
+  {
+    "id": "cs079",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "입력 검증의 목적과 가장 가까운 것은?",
+    "options": [
+      "비밀번호를 평문으로 바꾼다",
+      "서버 로그를 삭제한다",
+      "허용된 형식과 범위의 데이터만 처리한다",
+      "모든 요청을 성공 처리한다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "OWASP Top 10: Injection",
+    "sourceUrl": "https://owasp.org/Top10/A03_2021-Injection/"
+  },
+  {
+    "id": "cs080",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Rate limiting이 줄이는 데 도움이 되는 위험은?",
+    "options": [
+      "HTML 태그 중첩",
+      "무차별 대입과 과도한 요청",
+      "CSS 파싱",
+      "정렬 안정성"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "OWASP Top 10: Broken Access Control",
+    "sourceUrl": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/"
+  },
+  {
+    "id": "cs081",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "트랜잭션의 Atomicity 의미는?",
+    "options": [
+      "작업이 모두 반영되거나 모두 반영되지 않는다",
+      "항상 가장 빠르게 실행된다",
+      "권한을 자동 부여한다",
+      "HTML을 원자적으로 파싱한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "PostgreSQL Docs: Transactions",
+    "sourceUrl": "https://www.postgresql.org/docs/current/tutorial-transactions.html"
+  },
+  {
+    "id": "cs082",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "트랜잭션의 Consistency 의미와 가까운 것은?",
+    "options": [
+      "항상 캐시된다",
+      "항상 병렬 실행된다",
+      "항상 메모리만 사용한다",
+      "트랜잭션 전후 데이터가 정의된 제약을 만족해야 한다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "PostgreSQL Docs: Transactions",
+    "sourceUrl": "https://www.postgresql.org/docs/current/tutorial-transactions.html"
+  },
+  {
+    "id": "cs083",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "트랜잭션의 Isolation 의미는?",
+    "options": [
+      "HTTP 헤더를 압축한다",
+      "배열을 정렬한다",
+      "동시 실행 트랜잭션이 서로 끼치는 영향을 제어한다",
+      "비밀번호를 숨긴다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "PostgreSQL Docs: Transaction Isolation",
+    "sourceUrl": "https://www.postgresql.org/docs/current/transaction-iso.html"
+  },
+  {
+    "id": "cs084",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "트랜잭션의 Durability 의미는?",
+    "options": [
+      "요청을 캐시하지 않는다",
+      "커밋된 결과는 장애 후에도 보존되어야 한다",
+      "커밋 전 결과를 모두 공개한다",
+      "메모리에서만 유지한다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "PostgreSQL Docs: Transactions",
+    "sourceUrl": "https://www.postgresql.org/docs/current/tutorial-transactions.html"
+  },
+  {
+    "id": "cs085",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "MVCC의 핵심 아이디어는?",
+    "options": [
+      "여러 버전으로 동시 읽기/쓰기를 조율한다",
+      "모든 트랜잭션을 한 줄로만 실행한다",
+      "인덱스를 금지한다",
+      "SQL을 HTML로 바꾼다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 3,
+    "sourceTitle": "PostgreSQL Docs: Concurrency Control",
+    "sourceUrl": "https://www.postgresql.org/docs/current/mvcc.html"
+  },
+  {
+    "id": "cs086",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Read Committed 격리 수준에서 일반적으로 보장하는 것은?",
+    "options": [
+      "트랜잭션 전체가 항상 같은 스냅샷만 본다",
+      "직렬 실행과 완전히 동일하다",
+      "모든 쓰기를 금지한다",
+      "각 문장이 커밋된 데이터만 본다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 3,
+    "sourceTitle": "PostgreSQL Docs: Transaction Isolation",
+    "sourceUrl": "https://www.postgresql.org/docs/current/transaction-iso.html"
+  },
+  {
+    "id": "cs087",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Repeatable Read가 줄이려는 대표 현상은?",
+    "options": [
+      "HTML 파싱 오류",
+      "DNS 캐시 만료",
+      "같은 트랜잭션 안에서 같은 조회 결과가 달라지는 현상",
+      "디스크 용량 증가"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 3,
+    "sourceTitle": "PostgreSQL Docs: Transaction Isolation",
+    "sourceUrl": "https://www.postgresql.org/docs/current/transaction-iso.html"
+  },
+  {
+    "id": "cs088",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Serializable 격리 수준의 목표는?",
+    "options": [
+      "HTTP 요청 병합",
+      "동시 실행 결과가 어떤 직렬 실행 결과와 같게 보이도록 한다",
+      "모든 쿼리를 문자열로 저장",
+      "인덱스 제거"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 3,
+    "sourceTitle": "PostgreSQL Docs: Transaction Isolation",
+    "sourceUrl": "https://www.postgresql.org/docs/current/transaction-iso.html"
+  },
+  {
+    "id": "cs089",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Database index의 주된 목적은?",
+    "options": [
+      "검색 조건에 맞는 행을 더 빠르게 찾게 한다",
+      "항상 저장 공간을 줄인다",
+      "권한을 자동 부여한다",
+      "트랜잭션을 삭제한다"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 1,
+    "sourceTitle": "PostgreSQL Docs: Indexes",
+    "sourceUrl": "https://www.postgresql.org/docs/current/indexes.html"
+  },
+  {
+    "id": "cs090",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "인덱스 사용의 trade-off로 맞는 것은?",
+    "options": [
+      "항상 모든 쿼리를 느리게 한다",
+      "데이터 무결성을 없앤다",
+      "SQL Injection을 자동 방어한다",
+      "조회는 빨라질 수 있지만 쓰기/저장 비용이 늘 수 있다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "PostgreSQL Docs: Indexes",
+    "sourceUrl": "https://www.postgresql.org/docs/current/indexes.html"
+  },
+  {
+    "id": "cs091",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Critical Rendering Path는 무엇인가?",
+    "options": [
+      "해시 테이블이 충돌하는 단계",
+      "CPU가 스레드를 생성하는 단계",
+      "브라우저가 HTML/CSS/JS를 화면 픽셀로 바꾸는 단계",
+      "DB가 트랜잭션을 커밋하는 단계"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "MDN: Critical rendering path",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Performance/Critical_rendering_path"
+  },
+  {
+    "id": "cs092",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "DOM은 무엇을 표현하는가?",
+    "options": [
+      "DB 인덱스 루트",
+      "HTML 문서의 객체 모델",
+      "CSS만의 색상표",
+      "HTTP 캐시 엔트리"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "web.dev: Understand the critical path",
+    "sourceUrl": "https://web.dev/learn/performance/understanding-the-critical-path"
+  },
+  {
+    "id": "cs093",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "CSSOM은 무엇과 관련 있는가?",
+    "options": [
+      "CSS 규칙을 브라우저가 이해하는 객체 모델",
+      "SQL 실행 계획",
+      "TLS 인증서",
+      "스택 프레임"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 2,
+    "sourceTitle": "web.dev: Understand the critical path",
+    "sourceUrl": "https://web.dev/learn/performance/understanding-the-critical-path"
+  },
+  {
+    "id": "cs094",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Render tree는 주로 무엇으로부터 만들어지는가?",
+    "options": [
+      "HTTP 쿠키와 ETag",
+      "SQL 테이블과 인덱스",
+      "스택과 큐",
+      "DOM과 CSSOM"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "web.dev: Understand the critical path",
+    "sourceUrl": "https://web.dev/learn/performance/understanding-the-critical-path"
+  },
+  {
+    "id": "cs095",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Layout 단계의 역할은?",
+    "options": [
+      "GET을 POST로 변환한다",
+      "DB를 백업한다",
+      "각 요소의 위치와 크기를 계산한다",
+      "비밀번호를 해싱한다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 1,
+    "sourceTitle": "web.dev: Understand the critical path",
+    "sourceUrl": "https://web.dev/learn/performance/understanding-the-critical-path"
+  },
+  {
+    "id": "cs096",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Paint 단계의 역할은?",
+    "options": [
+      "큐를 비운다",
+      "요소를 픽셀로 그린다",
+      "트랜잭션을 직렬화한다",
+      "쿠키를 암호화한다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 1,
+    "sourceTitle": "web.dev: Understand the critical path",
+    "sourceUrl": "https://web.dev/learn/performance/understanding-the-critical-path"
+  },
+  {
+    "id": "cs097",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "렌더링을 막는 CSS가 성능에 영향을 주는 이유는?",
+    "options": [
+      "CSSOM이 준비되어야 올바른 렌더 트리를 만들 수 있다",
+      "CSS가 SQL을 실행하기 때문",
+      "CSS는 항상 네트워크를 끊기 때문",
+      "CSS는 쿠키를 삭제하기 때문"
+    ],
+    "answerIndex": 0,
+    "answer": "①",
+    "difficulty": 3,
+    "sourceTitle": "web.dev: Understand the critical path",
+    "sourceUrl": "https://web.dev/learn/performance/understanding-the-critical-path"
+  },
+  {
+    "id": "cs098",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Parser-blocking JavaScript가 문제가 되는 이유는?",
+    "options": [
+      "DB 인덱스를 삭제한다",
+      "TLS를 비활성화한다",
+      "해시 충돌을 만든다",
+      "HTML 파싱과 초기 렌더링을 지연시킬 수 있다"
+    ],
+    "answerIndex": 3,
+    "answer": "④",
+    "difficulty": 2,
+    "sourceTitle": "web.dev: Understand the critical path",
+    "sourceUrl": "https://web.dev/learn/performance/understanding-the-critical-path"
+  },
+  {
+    "id": "cs099",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Progressive rendering의 장점은?",
+    "options": [
+      "정렬을 불가능하게 한다",
+      "트랜잭션 격리를 없앤다",
+      "가능한 콘텐츠를 점진적으로 보여줄 수 있다",
+      "모든 요청을 서버에서 차단한다"
+    ],
+    "answerIndex": 2,
+    "answer": "③",
+    "difficulty": 2,
+    "sourceTitle": "web.dev: Understand the critical path",
+    "sourceUrl": "https://web.dev/learn/performance/understanding-the-critical-path"
+  },
+  {
+    "id": "cs100",
+    "type": "multipleChoice",
+    "category": "CS 지식",
+    "question": "Critical Rendering Path 최적화의 목표는?",
+    "options": [
+      "HTTP 상태 코드를 없앤다",
+      "초기 렌더링을 막는 중요한 리소스와 작업을 줄인다",
+      "모든 보안 검사를 제거한다",
+      "모든 데이터를 평문으로 저장한다"
+    ],
+    "answerIndex": 1,
+    "answer": "②",
+    "difficulty": 2,
+    "sourceTitle": "MDN: Critical rendering path",
+    "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/Performance/Critical_rendering_path"
+  }
+]
